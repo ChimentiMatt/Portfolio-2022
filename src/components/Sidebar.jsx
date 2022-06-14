@@ -6,22 +6,22 @@ const Sidebar = () => {
         mr-[50rem]
         flex
         flex-col 
-        justify-between
+        justify-center
         w-[8rem]
         h-screen
-        bg-zinc-900"
+        bg-black"
     >
         <div>
-            <h1 className="
+            {/* <h1 className="
                 top-0
                 bg-teal-600
                 font-bold
                 text-center
-                text-[2rem]
-                text-white
-                pt-[1rem]
-                pb-[1rem]"
-            >Matt C.</h1>
+                text-[3.5rem]
+                text-white   
+                pt-[1.5rem]
+                pb-[1.5rem]"
+            >Matt</h1> */}
             {/* <p className="
                 text-center
                 bg-teal-600
@@ -30,6 +30,15 @@ const Sidebar = () => {
             >Programmer</p> */}
         </div>
         <div>
+        <h3 className="
+                text-center
+                text-[1rem]
+                text-white
+                pt-[1rem]
+                pb-[1rem]
+                border-t-[1px]
+                border-stone-800"
+            >Home</h3>
             <h3 className="
                 text-center
                 text-[1rem]
@@ -65,7 +74,7 @@ const Sidebar = () => {
             justify-center
             bg-blue
             list-none
-            pb-[15rem]
+            
             pt-[1rem]">
                 
             <li className="

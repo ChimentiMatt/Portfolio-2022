@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="
       App 
-      bg-neutral-900
+      
       flex">
       <Sidebar />
       <div className="

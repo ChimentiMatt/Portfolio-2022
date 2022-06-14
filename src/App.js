@@ -12,7 +12,9 @@ function App() {
       <div className="
         flex 
         flex-col 
-        pl-[8rem]">
+
+        md:pl-[8rem]
+        ">
         <Home />
         <About />
       </div>

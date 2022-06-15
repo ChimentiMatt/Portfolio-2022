@@ -13,19 +13,42 @@ body {
     sans-serif; */
     font-family: 'Heebo', sans-serif;
   /* font-weight: bold; */
+  /* background-color: rgb(3, 3, 3); */
+  /* background: black; */
+
+  background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000, #ffffff);
 }
 
+@media only screen and (max-width: 1000px) {
+  body{
+    background: black;
+  }
+}
+
+#homePage{
+  /* background-image: linear-gradient(to right top, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000); */
+
+  /* background-image: linear-gradient(to right top, #000000, #000000, #000000,  #ffffff); */
+}
+
+
+#backgroundEffect{
+  /* background-image: linear-gradient(to right bottom, #000000, #000000, #000000, #000000, #ffffff); */
+  /* background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000,  #ffffff); */
+
+  background-image: linear-gradient(to right bottom, #000000, #000000, #000000, #000000, #ffffff);
+}
 
 .titleShadow{ 
   text-shadow: 2px 2px black;
 }
 
 .smallShadow{
-  text-shadow: 1px 1px rgb(20 184 166);
+  text-shadow: 1px 1px #14b8a6;
 }
 
 #Matt{
-  text-shadow: 2px 2px rgb(244 63 94);
+  text-shadow: 2px 2px #f43f5e;
 }
 
 #bodyShot{

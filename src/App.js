@@ -5,6 +5,8 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills"
 
 function App() {
+
+  
   return (
     <div className="
       App 
@@ -19,10 +21,12 @@ function App() {
         md:pl-[8rem]
 
         ">
-        <Home />
-        <Projects />
-        <About />
-        <Skills />
+          <Home />
+          <Projects />
+          <About />
+        <div id='backgroundEffect'>
+          <Skills />
+        </div>
       </div>
     </div>
   );

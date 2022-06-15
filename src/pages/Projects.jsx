@@ -5,7 +5,7 @@ import MarioComposer from '../images/marioMusic.PNG'
 import Pokemon from '../images/pokemon.PNG'
 import LinguistAssist from '../images/LA.PNG'
 
-const Projects = () => {
+const Projects = ({ref}) => {
     const targets = [
         'projects_M', 'projects_y', 'projects_S', 'projects_h', 'projects_o', 'projects_w', 'projects_c', 'projects_a' , 'projects_s' , 'projects_e' 
     ]
@@ -39,7 +39,8 @@ const Projects = () => {
     }
     
   return (
-    <div className="flex h-[120vh] relative left-0  ">
+    <div 
+        className="flex h-[100vh] relative left-0  ">
         <div id="projectsPage" className="opacity-0 flex flex-row ">
             <div className=" 
                 flex
@@ -71,25 +72,25 @@ const Projects = () => {
                 <div className="flex flex-col justify-between mt-5 w-[90vw] h-[80vh]  md:w-[75vw] md:h-[20rem]">
                     <div>
                         
-                        <div className="flex flex-col md:flex-row">
-                            <img className="md:h-[15rem] border-4 border-teal-500 rounded-lg" src={MarioComposer} />
+                        <div className="flex flex-col text-white md:flex-row">
+                            <img className="md:h-[12rem] border-2 border-black rounded-lg" src={MarioComposer} />
                             <div className="hidden ml-[2rem] md:flex md:flex-col ">
                                 <p className="mb-2 text-rose-500 smallShadow">{"<"} Mario Composer {"/>"}</p>
                                 <p className="">A MERN Stack application based on the Super Nintendo game Mario Paint Composer. Build a song by placing notes on the music sheet. Change the note from sounds like a piano or trumpet. Change the note type from durations like a quarter note or half note. Save your song with a user's system that is not required. </p>
-                                <p className="mt-5">Have fun! It's a joy to play around on. </p>
-                                <p className="mt-5">Visit Application </p>
+                                <p className="mt-3">Have fun! It's a joy to play around on. </p>
+                                <p className="mt-3 ">Visit Application </p>
                             </div>
                             <p className="mt-5 md:hidden">Visit Application </p>
                         </div>
                     </div>
                     <div className="mt-5 mb-5  ">
-                        <div className="flex flex-col md:flex-row">
-                            <img className="md:h-[15rem] border-4 border-teal-500 rounded-lg"  src={Pokemon} />
+                        <div className="flex flex-col text-white md:flex-row">
+                            <img className="md:h-[12rem] border-2 border-black rounded-lg"  src={Pokemon} />
                             <div className="hidden ml-[2rem] md:flex md:flex-col  ">
                                 <p className="mb-2 text-rose-500 smallShadow">{"<"} Pokémon! Simulator {"/>"}</p>
                                 <p className="">Play a mock version of the Pokemon Gameboy game built using only vanilla Javascript. Use Charmander to battle and catch Pokémon. See if you can catch them all. Your progress is tracked in your Pokédex.</p>
-                                <p className="mt-5">How to play: Use the Arrow Keys and Enter. You can also click on the Gameboys buttons or click inside of the Gameboy screen. At any point, the start button will show you the Pokedex. </p>
-                                <p className="mt-5">Visit Application </p>
+                                <p className="mt-3">How to play: Use the Arrow Keys and Enter. You can also click on the Gameboys buttons or click inside of the Gameboy screen. At any point, the start button will show you the Pokedex. </p>
+                                <p className="mt-3">Visit Application </p>
                             </div>
                             <p className="mt-5 md:hidden">Visit Application </p>
                         </div>
@@ -97,13 +98,13 @@ const Projects = () => {
 
                     <div className="">
     
-                        <div className="flex flex-col md:flex-row">
-                            <img className="md:h-[15rem] border-4 border-teal-500 rounded-lg"  src={LinguistAssist} />
+                        <div className="flex flex-col text-white md:flex-row">
+                            <img className="md:h-[12rem] border-2 border-black rounded-lg"  src={LinguistAssist} />
                             <div className="hidden ml-[2rem] md:flex md:flex-col  ">
                                 <p className="mb-2 text-rose-500 smallShadow">{"<"} Linguist Assist {"/>"}</p>
                                 <p className="">A MERN Stack application based on the Super Nintendo game Mario Paint Composer. Build a song by placing notes on the music sheet. Change the note from sounds like a piano or trumpet. Change the note type from durations like a quarter note or half note. Save your song with a user's system that is not required. </p>
-                                <p className="mt-5">Have fun! It's a joy to play around on. </p>
-                                <p className="mt-5">Visit Application </p>
+                                <p className="mt-3">Have fun! It's a joy to play around on. </p>
+                                <p className="mt-3">Visit Application </p>
                                 </div>
                              <p className="mt-5 md:hidden">Visit Application </p>
                         </div>

@@ -52,12 +52,12 @@ const Home = () => {
     }
 
   return (
-    <div className="
+    <div id="homePage" className="
         flex
         flex-col
         justify-center
         h-screen 
-        text-black 
+        text-white
         "
     >
         <div className="
@@ -186,7 +186,8 @@ const Home = () => {
                 mt-[1rem]
                 border-2 
                 border-teal-600
-
+                rounded-lg
+                
                 md:ml-[5rem] 
                 md:mt-[2.5rem]  
                 "
@@ -199,7 +200,7 @@ const Home = () => {
             bottom-2
             ml-[4.9rem]
 
-            md:left-[50%]
+            md:left-[45%]
             md:bottom-10
         ">
             <GoChevronDown id='chevronDown' className="

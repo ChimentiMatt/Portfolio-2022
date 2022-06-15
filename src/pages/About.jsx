@@ -46,7 +46,7 @@ const About = () => {
     }
 
   return (
-    <div className="flex relative left-0 h-screen ">
+    <div className="flex relative left-0 h-screen text-white">
         <div id="aboutPage" className="opacity-0 flex flex-row ">
             <div className=" 
                 flex
@@ -87,8 +87,9 @@ const About = () => {
         <div id="aboutRight" className="opacity-0 flex justify-center items-center md:opacity-1">
             <img id="bodyShot" className="
                 hidden
-                border-4
-                border-teal-500
+                border-2
+                rounded-lg
+                border-black
                 ml-[15rem]
                 h-[40rem]
                 

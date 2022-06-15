@@ -1,4 +1,6 @@
-const Sidebar = () => {
+import {Link} from 'react-scroll'
+
+const Sidebar = ({handleClick}) => {
   return (
     <div className="
         hidden
@@ -10,15 +12,18 @@ const Sidebar = () => {
         w-[8rem]
         h-screen
         bg-black
+        border-r-2
+        border-white
         
         md:flex
         "
         
     >
         <div>
+            <Link to="homePage" spy={true} smooth={true}>
             <h1 id="Matt" className="
                 // top-5
-                bg-teal-600
+                bg-teal-500
                 font-bold
                 text-center
                 text-[2rem]
@@ -28,7 +33,7 @@ const Sidebar = () => {
             >Matt</h1>
             <p className="
                 text-center
-                bg-teal-600
+                bg-teal-500
                 text-white
                 text-[.7rem]
                 "
@@ -36,7 +41,7 @@ const Sidebar = () => {
             </p>
             <p className="
                 text-center
-                bg-teal-600
+                bg-teal-500
                 text-white
                 text-[.7rem]
                 "
@@ -44,16 +49,33 @@ const Sidebar = () => {
             </p>
             <p className="
                 text-center
-                bg-teal-600
+                bg-teal-500
                 text-white
                 text-[.7rem]
                 pb-[2rem]"
             >{"<"} Teacher {"/>"}
             </p>
+            </Link>
         </div>
+        
         <div>
-        <h3 className="
-                mt-[15rem]
+
+            <ul className="
+                mt-[12.5rem]
+                text-center
+                text-[1rem]
+                text-white
+                
+                pt-[1rem]
+                pb-[1rem]
+                border-t-[1px]
+                border-stone-800
+                hover:text-teal-500
+                "
+                >
+                <Link to="projectsPage" spy={true} smooth={true}>Projects</Link>
+            </ul>
+            <ul className="
                 text-center
                 text-[1rem]
                 text-white
@@ -61,27 +83,24 @@ const Sidebar = () => {
                 pb-[1rem]
                 border-t-[1px]
                 border-stone-800
+                hover:text-teal-500
                 "
-            >Home</h3>
-            <h3 className="
+                >
+                <Link to="aboutPage" spy={true} smooth={true}>About</Link>
+            </ul>
+            <ul className="
                 text-center
                 text-[1rem]
                 text-white
                 pt-[1rem]
                 pb-[1rem]
                 border-t-[1px]
-                border-stone-800"
-            >Projects</h3>
-            <h3 className="
-                text-center
-                text-[1rem]
-                text-white
-                pt-[1rem]
-                pb-[1rem]
-                border-t-[1px]
-                border-stone-800"
-            >About</h3>
-            <h3 className="
+                border-stone-800
+                hover:text-teal-500"
+                > 
+                <Link to="skillsPage" spy={true} smooth={true}>Skills</Link>
+            </ul>
+            <ul className="
                 text-center
                 text-[1rem]
                 text-white
@@ -89,8 +108,11 @@ const Sidebar = () => {
                 pb-[1rem]
                 border-t-[1px]
                 border-b-[1px]
-                border-stone-800"
-            > Skills</h3>
+                border-stone-800
+                hover:text-teal-500"
+                > 
+                <Link to="skillsPage" spy={true} smooth={true}>Contact</Link>
+            </ul>
         </div>
         <div className="
             flex
@@ -104,13 +126,16 @@ const Sidebar = () => {
             <li className="
                 text-center
                 text-[1rem]
-                text-white"
+                text-white
+                hover:text-teal-500"
             >LI</li>
             <li className="
                 text-center
                 text-[1rem]
                 text-white
-                pl-2"
+                hover:text-teal-500
+                pl-2
+                "
             >GH</li>
         </div>
     </div>

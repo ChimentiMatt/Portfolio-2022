@@ -7,7 +7,7 @@ import LinguistAssist from '../images/LA.PNG'
 
 const Projects = () => {
     const targets = [
-        'projects_M', 'projects_y', 'projects_S', 'projects_o', 'projects_w', 'projects_c',, 'projects_h', 'projects_a' , 'projects_s' , 'projects_e' 
+        'projects_M', 'projects_y', 'projects_S', 'projects_h', 'projects_o', 'projects_w', 'projects_c', 'projects_a' , 'projects_s' , 'projects_e' 
     ]
 
     useEffect(() => {

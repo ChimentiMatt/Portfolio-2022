@@ -90,7 +90,7 @@ const Sidebar = () => {
                 border-t-[1px]
                 border-b-[1px]
                 border-stone-800"
-            > Skill</h3>
+            > Skills</h3>
         </div>
         <div className="
             flex

@@ -16,21 +16,26 @@ body {
 }
 
 
-.name{ 
+.titleShadow{ 
   text-shadow: 2px 2px black;
+}
+
+.smallShadow{
+  text-shadow: 1px 1px rgb(20 184 166);
 }
 
 #Matt{
   text-shadow: 2px 2px rgb(244 63 94);
 }
 
+#bodyShot{
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
 
-#test1{
-  /* display: flex; */
-  /* justify-content: start; */
-  /* justify-content: space-between; */
-  /* background: blue; */
-  /* line-height: 110%; */
+
+
+#test3{
+
 }
 
 

@@ -1,6 +1,7 @@
 import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -12,10 +13,13 @@ function App() {
       <div className="
         flex 
         flex-col 
+        w-screen
 
         md:pl-[8rem]
+
         ">
         <Home />
+        <Projects />
         <About />
       </div>
     </div>

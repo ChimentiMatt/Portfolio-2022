@@ -7,10 +7,10 @@ const Home = () => {
         'H', 'e', 'l', 'l_2', 'o', 'comma',
         'I', 'apostrophe', 'm',
         'M', 'a', 't', 't_2', 'C', 'h', 'i', 'm_2', 'e_2', 'n', 't_3', 'i_2',  'comma_2',
-        'a_2', 'p', 'r', 'o_2', 'g', 'r_2', 'a_3', 'm_3', 'e_3', 'r_3', 'comma_3',
-        's', 't_4', 'u', 'd', 'e_4', 'n_3', 't_5', 'comma_4',
-        'a_4', 'n_4', 'd_2',
-        't_6', 'e_5', 'a_5', 'c_2', 'h_2', 'e_6', 'r_4', 'period'
+        'a_2', 'd', 'e_3', 'v', 'e_4', 'l_3', 'o_2', 'p', 'e_5', 'r', 'comma_3',
+        's', 't_4', 'u', 'd_2', 'e_6', 'n_3', 't_5', 'comma_4',
+        'a_4', 'n_4', 'd_3',
+        't_6', 'e_7', 'a_5', 'c_2', 'h_2', 'e_8', 'r_4', 'period'
     ]
 
     useEffect(() => {
@@ -63,9 +63,9 @@ const Home = () => {
         <div className="
             text-[3.5rem]
             font-bold
-            
             pl-[1rem]
             leading-[140%]
+
             md:pl-[5rem] 
             md:text-[5rem]
             md:leading-[120%]
@@ -85,20 +85,20 @@ const Home = () => {
                 <h1 id="apostrophe" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>'</h1>
                 <h1 id="m" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>m</h1>
 
-                <h1 id="M" className="text-rose-500 pl-1.5 opacity-0 name md:pl-5" onMouseEnter={hoverAnimate}>M</h1>
-                <h1 id="a" className="text-rose-500 opacity-0 name" onMouseEnter={hoverAnimate}>a</h1>
-                <h1 id="t" className="text-rose-500 opacity-0 name" onMouseEnter={hoverAnimate}>t</h1>
-                <h1 id="t_2" className="text-rose-500 opacity-0 name" onMouseEnter={hoverAnimate}>t</h1>
+                <h1 id="M" className="text-rose-500 pl-2 opacity-0 titleShadow md:pl-5" onMouseEnter={hoverAnimate}>M</h1>
+                <h1 id="a" className="text-rose-500 opacity-0 titleShadow" onMouseEnter={hoverAnimate}>a</h1>
+                <h1 id="t" className="text-rose-500 opacity-0 titleShadow" onMouseEnter={hoverAnimate}>t</h1>
+                <h1 id="t_2" className="text-rose-500 opacity-0 titleShadow" onMouseEnter={hoverAnimate}>t</h1>
 
                 {/* Medium screen text for Chimenti */}
-                <h1 id="C" className="hidden text-teal-500 pl-1.5 opacity-0 name md:pl-5 md:block" onMouseEnter={hoverAnimate}>C</h1>
-                <h1 id="h" className="hidden text-teal-500 opacity-0 name md:block" onMouseEnter={hoverAnimate}>h</h1>
-                <h1 id="i" className="hidden text-teal-500 opacity-0 name md:block" onMouseEnter={hoverAnimate}>i</h1>
-                <h1 id="m_2" className="hidden text-teal-500 opacity-0 name md:block" onMouseEnter={hoverAnimate}>m</h1>
-                <h1 id="e_2" className="hidden text-teal-500 opacity-0 name md:block" onMouseEnter={hoverAnimate}>e</h1>
-                <h1 id="n" className="hidden text-teal-500 opacity-0 name md:block" onMouseEnter={hoverAnimate}>n</h1>
-                <h1 id="t_3" className="hidden text-teal-500 opacity-0 name md:block" onMouseEnter={hoverAnimate}>t</h1>
-                <h1 id="i_2" className="hidden text-teal-500 opacity-0 name md:block" onMouseEnter={hoverAnimate}>i</h1>
+                <h1 id="C" className="hidden text-teal-500 pl-5 opacity-0 titleShadow md:pl-5 md:block" onMouseEnter={hoverAnimate}>C</h1>
+                <h1 id="h" className="hidden text-teal-500 opacity-0 titleShadow md:block" onMouseEnter={hoverAnimate}>h</h1>
+                <h1 id="i" className="hidden text-teal-500 opacity-0 titleShadow md:block" onMouseEnter={hoverAnimate}>i</h1>
+                <h1 id="m_2" className="hidden text-teal-500 opacity-0 titleShadow md:block" onMouseEnter={hoverAnimate}>m</h1>
+                <h1 id="e_2" className="hidden text-teal-500 opacity-0 titleShadow md:block" onMouseEnter={hoverAnimate}>e</h1>
+                <h1 id="n" className="hidden text-teal-500 opacity-0 titleShadow md:block" onMouseEnter={hoverAnimate}>n</h1>
+                <h1 id="t_3" className="hidden text-teal-500 opacity-0 titleShadow md:block" onMouseEnter={hoverAnimate}>t</h1>
+                <h1 id="i_2" className="hidden text-teal-500 opacity-0 titleShadow md:block" onMouseEnter={hoverAnimate}>i</h1>
                 <h1 id="comma_2" className="hover:text-teal-500 opacity-0 md:block" onMouseEnter={hoverAnimate}>,</h1>
             </div>
 
@@ -119,34 +119,36 @@ const Home = () => {
             <div className="flex">
                 <h1 id="a_2" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>a</h1>
 
-                <h1 id="p" className="hover:text-teal-500 pl-1.5  opacity-0 md:pl-5" onMouseEnter={hoverAnimate}>p</h1>
-                <h1 id="r" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>r</h1>
-                <h1 id="o_2" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>o</h1>
-                <h1 id="g" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>g</h1>
-                <h1 id="r_2" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>r</h1>
-                <h1 id="a_3" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>a</h1>
-                <h1 id="m_3" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>m</h1>
+                <h1 id="d" className="hover:text-teal-500 pl-2  opacity-0 md:pl-5" onMouseEnter={hoverAnimate}>d</h1>
                 <h1 id="e_3" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>e</h1>
-                <h1 id="r_3" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>r</h1>
+                <h1 id="v" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>v</h1>
+                <h1 id="e_4" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>e</h1>
+                <h1 id="l_3" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>l</h1>
+                <h1 id="o_2" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>o</h1>
+                <h1 id="p" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>p</h1>
+                <h1 id="e_5" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>e</h1>
+                <h1 id="r" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>r</h1>
 
                 <h1 id="comma_3" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>,</h1>
 
-                <h1 id="s" className="hidden hover:text-teal-500 pl-1.5 opacity-0 md:pl-5 md:block" onMouseEnter={hoverAnimate}>s</h1>
+                {/* Medium screen text for student */}
+                <h1 id="s" className="hidden hover:text-teal-500 pl-2 opacity-0 md:pl-5 md:block" onMouseEnter={hoverAnimate}>s</h1>
                 <h1 id="t_4" className="hidden hover:text-teal-500 opacity-0 md:block" onMouseEnter={hoverAnimate}>t</h1>
                 <h1 id="u" className="hidden hover:text-teal-500 opacity-0 md:block" onMouseEnter={hoverAnimate}>u</h1>
-                <h1 id="d" className="hidden hover:text-teal-500 opacity-0 md:block" onMouseEnter={hoverAnimate}>d</h1>
-                <h1 id="e_4" className="hidden hover:text-teal-500 opacity-0 md:block" onMouseEnter={hoverAnimate}>e</h1>
+                <h1 id="d_2" className="hidden hover:text-teal-500 opacity-0 md:block" onMouseEnter={hoverAnimate}>d</h1>
+                <h1 id="e_6" className="hidden hover:text-teal-500 opacity-0 md:block" onMouseEnter={hoverAnimate}>e</h1>
                 <h1 id="n_3" className="hidden hover:text-teal-500 opacity-0 md:block" onMouseEnter={hoverAnimate}>n</h1>
                 <h1 id="t_5" className="hidden hover:text-teal-500 opacity-0 md:block" onMouseEnter={hoverAnimate}>t</h1>
                 <h1 id="comma_4" className="hidden hover:text-teal-500 opacity-0 md:block" onMouseEnter={hoverAnimate}>,</h1>
             </div>
 
+            {/* Mobile design text for student */}
             <div className="flex">
                 <h1 id="s" className="hover:text-teal-500 opacity-0 md:hidden" onMouseEnter={hoverAnimate}>s</h1>
                 <h1 id="t_4" className="hover:text-teal-500 opacity-0 md:hidden" onMouseEnter={hoverAnimate}>t</h1>
                 <h1 id="u" className=" hover:text-teal-500 opacity-0 md:hidden" onMouseEnter={hoverAnimate}>u</h1>
-                <h1 id="d" className="hover:text-teal-500 opacity-0 md:hidden" onMouseEnter={hoverAnimate}>d</h1>
-                <h1 id="e_4" className="hover:text-teal-500 opacity-0 md:hidden" onMouseEnter={hoverAnimate}>e</h1>
+                <h1 id="d_2" className="hover:text-teal-500 opacity-0 md:hidden" onMouseEnter={hoverAnimate}>d</h1>
+                <h1 id="e_6" className="hover:text-teal-500 opacity-0 md:hidden" onMouseEnter={hoverAnimate}>e</h1>
                 <h1 id="n_3" className="hiden hover:text-teal-500 opacity-0 md:hidden" onMouseEnter={hoverAnimate}>n</h1>
                 <h1 id="t_5" className="hover:text-teal-500 opacity-0 md:hidden" onMouseEnter={hoverAnimate}>t</h1>
                 <h1 id="comma_4" className="hover:text-teal-500 opacity-0 md:hidden" onMouseEnter={hoverAnimate}>,</h1>
@@ -155,14 +157,14 @@ const Home = () => {
             <div className="flex">
                 <h1 id="a_4" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>a</h1>
                 <h1 id="n_4" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>n</h1>
-                <h1 id="d_2" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>d</h1>
+                <h1 id="d_3" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>d</h1>
 
-                <h1 id="t_6" className="hover:text-teal-500 pl-1.5  opacity-0 md:pl-5" onMouseEnter={hoverAnimate}>t</h1>
-                <h1 id="e_5" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>e</h1>
+                <h1 id="t_6" className="hover:text-teal-500 pl-2  opacity-0 md:pl-5" onMouseEnter={hoverAnimate}>t</h1>
+                <h1 id="e_7" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>e</h1>
                 <h1 id="a_5" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>a</h1>
                 <h1 id="c_2" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>c</h1>
                 <h1 id="h_2" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>h</h1>
-                <h1 id="e_6" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>e</h1>
+                <h1 id="e_8" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>e</h1>
                 <h1 id="r_4" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>r</h1>
                 <h1 id="period" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>.</h1>
             </div>

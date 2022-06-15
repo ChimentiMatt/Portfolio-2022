@@ -1,6 +1,15 @@
 import {Link} from 'react-scroll'
+import GitHubIcon from '../images/GitHub.png'
+import LinkedInIcon from '../images/linkedin.png'
 
 const Sidebar = ({handleClick}) => {
+    const shadowMatt = () => {
+        document.getElementById('Matt').style.textShadow = '2px 2px #14b8a6'
+    }
+    const restoreMatt = () => {
+        document.getElementById('Matt').style.textShadow = '2px 2px #f43f5e'
+    }
+
   return (
     <div className="
         hidden
@@ -12,56 +21,58 @@ const Sidebar = ({handleClick}) => {
         w-[8rem]
         h-screen
         bg-black
-        border-r-2
+        border-r-[1px]
         border-white
-        
-        md:flex
-        "
-        
-    >
-        <div>
+    
+        md:flex">
+        <div onMouseEnter={shadowMatt} onMouseLeave={restoreMatt} className='bg-teal-500 text-white text-center hover:bg-rose-500'>
             <Link to="homePage" spy={true} smooth={true}>
             <h1 id="Matt" className="
-                // top-5
-                bg-teal-500
-                font-bold
-                text-center
                 text-[2rem]
-                text-white   
                 pt-[1.5rem]
                 "
             >Matt</h1>
             <p className="
+                relative
+                bottom-2.5
                 text-center
-                bg-teal-500
-                text-white
                 text-[.7rem]
                 "
             >{"<"} Developer  {"/>"}
             </p>
             <p className="
+                relative
+                bottom-3
                 text-center
-                bg-teal-500
-                text-white
                 text-[.7rem]
                 "
             >{"<"} Student {"/>"}
             </p>
             <p className="
-                text-center
-                bg-teal-500
-                text-white
+                relative
+                bottom-3.5
                 text-[.7rem]
-                pb-[2rem]"
+                pb-[1.5rem]"
             >{"<"} Teacher {"/>"}
             </p>
             </Link>
         </div>
         
         <div>
-
             <ul className="
                 mt-[12.5rem]
+                text-center
+                text-[1rem]
+                text-white
+                pt-[1rem]
+                pb-[1rem]
+                border-t-[1px]
+                border-stone-800
+                hover:text-teal-500
+                ">
+                <Link to="aboutPage" spy={true} smooth={true}>About</Link>
+            </ul>
+            <ul className="
                 text-center
                 text-[1rem]
                 text-white
@@ -71,22 +82,8 @@ const Sidebar = ({handleClick}) => {
                 border-t-[1px]
                 border-stone-800
                 hover:text-teal-500
-                "
-                >
+                ">
                 <Link to="projectsPage" spy={true} smooth={true}>Projects</Link>
-            </ul>
-            <ul className="
-                text-center
-                text-[1rem]
-                text-white
-                pt-[1rem]
-                pb-[1rem]
-                border-t-[1px]
-                border-stone-800
-                hover:text-teal-500
-                "
-                >
-                <Link to="aboutPage" spy={true} smooth={true}>About</Link>
             </ul>
             <ul className="
                 text-center
@@ -111,7 +108,7 @@ const Sidebar = ({handleClick}) => {
                 border-stone-800
                 hover:text-teal-500"
                 > 
-                <Link to="skillsPage" spy={true} smooth={true}>Contact</Link>
+                <Link to="contactPage" spy={true} smooth={true}>Contact</Link>
             </ul>
         </div>
         <div className="
@@ -128,7 +125,8 @@ const Sidebar = ({handleClick}) => {
                 text-[1rem]
                 text-white
                 hover:text-teal-500"
-            >LI</li>
+                ><img className="h-5 hover:bg-teal-500  hover:rounded-sm" src={LinkedInIcon} />
+            </li>
             <li className="
                 text-center
                 text-[1rem]
@@ -136,7 +134,8 @@ const Sidebar = ({handleClick}) => {
                 hover:text-teal-500
                 pl-2
                 "
-            >GH</li>
+                ><img className="h-5 hover:bg-teal-500 hover:rounded-lg" src={GitHubIcon} />
+            </li>
         </div>
     </div>
   )

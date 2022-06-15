@@ -81,14 +81,14 @@ const About = () => {
                     <p className="mb-5">Currently, I am two months away from finishing my Bridge to Master of Software at GCU then I begin the formal Masters. My GPA is a 4.0, and I will keep perfect marks throughout  my acedemia. </p>
 
                     <p className="text-rose-500 mt-5 smallShadow">{"<"} Teacher {"/>"}</p>
-                    <p >I teach Intro To Programming for PDX Code Guild, which is a community I love. I am a graduate myself of their Full-Stack Bootcamp as well as their Advanced MERN Stack Bootcamp. I also manage the TAs for the company. It's a true gem of an organization.</p>
+                    <p >I teach Intro To Programming for PDX Code Guild, which is a community I love. I am a graduate myself of their Full-Stack Bootcamp as well as their Advanced MERN Stack Bootcamp. I also manage the TAs for the company and run Study Hall. It's a true gem of an organization and community.</p>
                 </div>
             </div>
         <div id="aboutRight" className="opacity-0 flex justify-center items-center md:opacity-1">
             <img id="bodyShot" className="
                 hidden
                 border-2
-                rounded-lg
+         
                 border-black
                 ml-[15rem]
                 h-[40rem]

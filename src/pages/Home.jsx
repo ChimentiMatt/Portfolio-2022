@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import {Link} from 'react-scroll'
 import gsap from "gsap"
 import { GoChevronDown } from 'react-icons/go'
 
@@ -48,7 +49,7 @@ const Home = () => {
         gsap.to("#" + e.target.id, { background: 'white', color: 'black', borderColor: 'black'})
     }
     const exitHoverButton = (e) => {
-        gsap.to("#" + e.target.id, { background: 'teal', color: 'white', borderColor: 'teal'})
+        gsap.to("#" + e.target.id, { background: 'black', color: 'teal', borderColor: 'teal'})
     }
 
   return (
@@ -171,27 +172,30 @@ const Home = () => {
 
         </div>
         <div>
-            <button id="contactMeBtn" onMouseEnter={hoverButton} onMouseLeave={exitHoverButton} className="
-                opacity-0
-                relative
-                top-10
-                text-[1.5rem]
-                text-white
-                bg-teal-600
-                shadowText
-                p-[.5rem]
-                pl-[2rem]
-                pr-[2rem]
-                ml-[1rem] 
-                mt-[1rem]
-                border-2 
-                border-teal-600
-                rounded-lg
-                
-                md:ml-[5rem] 
-                md:mt-[2.5rem]  
-                "
-            >Contact me</button>
+            <Link to="contactPage" spy={true} smooth={true}>
+                <button id="contactMeBtn" onMouseEnter={hoverButton} onMouseLeave={exitHoverButton} className="
+                    opacity-0
+                    relative
+                    top-10
+                    text-[1.5rem]
+                    text-teal-500
+                    
+                    shadowText
+                    p-[.5rem]
+                    pl-[2rem]
+                    pr-[2rem]
+                    ml-[1rem] 
+                    mt-[1rem]
+                    bg-black
+                    border-2 
+                    border-teal-600
+                    
+                    
+                    md:ml-[5rem] 
+                    md:mt-[2.5rem]  
+                    "
+                >Contact me</button>
+            </Link>
         </div>
         <div className="
             absolute

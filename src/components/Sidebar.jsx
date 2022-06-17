@@ -16,7 +16,7 @@ const Sidebar = ({handleClick}) => {
         z-10
         realative
         fixed
-        mr-[50rem]
+        
         flex-col 
         justify-between
         w-[8rem]
@@ -59,9 +59,10 @@ const Sidebar = ({handleClick}) => {
             </Link>
         </div>
         
-        <div>
+        <div className=''>
             <ul className="
-                mt-[12.5rem]
+        
+          
                 text-center
                 text-[1rem]
                 text-white
@@ -111,32 +112,32 @@ const Sidebar = ({handleClick}) => {
                 > 
                 <Link to="contactPage" spy={true} smooth={true}>Contact</Link>
             </ul>
-        </div>
-        <div className="
-            flex
-            content-center
-            justify-center
-            
-            list-none
-            pb-[22rem]
-            pt-[1rem]">
+            <div className="
+                flex
+                content-center
+                justify-center
                 
-            <li className="
-                text-center
-                text-[1rem]
-                text-white
-                hover:text-teal-500"
-                ><img className="h-5 hover:bg-teal-500  hover:rounded-sm" src={LinkedInIcon} />
-            </li>
-            <li className="
-                text-center
-                text-[1rem]
-                text-white
-                hover:text-teal-500
-                pl-2
-                "
-                ><img className="h-5 hover:bg-teal-500 hover:rounded-lg" src={GitHubIcon} />
-            </li>
+                list-none
+                pb-[18rem]
+                pt-[1rem]">
+                    
+                <li className="
+                    text-center
+                    text-[1rem]
+                    text-white
+                    hover:text-teal-500"
+                    ><img className="h-5 hover:bg-teal-500  hover:rounded-sm" src={LinkedInIcon} />
+                </li>
+                <li className="
+                    text-center
+                    text-[1rem]
+                    text-white
+                    hover:text-teal-500
+                    pl-2
+                    "
+                    ><img className="h-5 hover:bg-teal-500 hover:rounded-lg" src={GitHubIcon} />
+                </li>
+            </div>
         </div>
     </div>
   )

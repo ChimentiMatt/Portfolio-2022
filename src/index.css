@@ -12,10 +12,12 @@ body {
   background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000,  #ffffff);
 }
 
+*{
+  /* border: 1px solid red */
+}
 
 #homePage{
   /* background-image: linear-gradient(to right top, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000); */
-
   /* background-image: linear-gradient(to right top, #000000, #000000, #000000,  #ffffff); */
 }
 
@@ -23,7 +25,6 @@ body {
 #backgroundEffect{
   /* background-image: linear-gradient(to right bottom, #000000, #000000, #000000, #000000, #ffffff); */
   /* background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000,  #ffffff); */
-
   background-image: linear-gradient(to right bottom, #000000, #000000, #000000, #000000, #ffffff);
 }
 

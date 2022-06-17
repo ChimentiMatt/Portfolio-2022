@@ -61,7 +61,7 @@ const About = () => {
                     text-[3.5rem]
                     font-bold
                     
-                    lg:text-[5rem]
+                    md:text-[5rem]
                     lg:leading-[120%]">
                     <h1 id="about_A" className="text-rose-500 hover:text-teal-500 opacity-0 titleShadow">A</h1>
                     <h1 id="about_b" className="text-rose-500 hover:text-teal-500 opacity-0 titleShadow">b</h1>
@@ -73,7 +73,7 @@ const About = () => {
                     <h1 id="about_e" className="text-teal-500 hover:text-teal-500 opacity-0 titleShadow" >e</h1>
                 </div>
 
-                <div className="text-[1rem] w-[90vw] lg:w-[35rem]">
+                <div className="text-[1rem] w-[90vw] sm:w-[70vw] lg:w-[30rem]">
                     <p className="text-rose-500 smallShadow">{"<"} Developer {"/>"}</p>
                     <p>I am a developer living in Oregon who has a passion for making creative front-end focused applications. I find pushing myself to create something bigger and better to be a never-ending supply of excitement and motivation.</p>
 
@@ -90,11 +90,14 @@ const About = () => {
                 border-2
          
                 border-black
-                ml-[15rem]
+                
                 h-[40rem]
 
 
                 xl:block
+                xl:ml-[10rem]
+                2xl:ml-[20rem]
+                
                 " 
             src={Matt} 
             />

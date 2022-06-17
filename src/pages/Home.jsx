@@ -53,7 +53,7 @@ const Home = () => {
     }
 
   return (
-    <div id="homePage" className="
+    <div id="homePage" className="  min-h-[45rem]
         flex
         flex-col
         justify-center
@@ -67,6 +67,7 @@ const Home = () => {
             pl-[1rem]
             leading-[140%]
 
+            
             md:pl-[5rem] 
             md:text-[5rem]
             md:leading-[120%]

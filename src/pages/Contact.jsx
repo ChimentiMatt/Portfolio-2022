@@ -4,7 +4,7 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 
 import ContactForm from "../components/ContactForm"
 
-export const Contact = () => {
+export const Contact = ({toast}) => {
     const targets = [
         'contact_C', 'contact_o', 'contact_n', 'contact_t', 'contact_a', 'contact_c', 'contact_t_2',
         'contact_M' , 'contact_e' 
@@ -55,7 +55,7 @@ export const Contact = () => {
             <div className="mt-5 mb-5 w-[95%]">
                 <h1>Have something you want built? Send me a message and we can grab digital coffee.</h1>
             </div>
-            <ContactForm />
+            <ContactForm toast={toast}/>
             </div>
         </div>
     </div>

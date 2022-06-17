@@ -48,7 +48,9 @@ const Skills = () => {
                         flex 
                         leading-[140%]  
                         text-[3.5rem]
-                        font-bold
+                        md:mt-[0rem]
+                        md:text-[5rem]
+                        mt-[15rem]
                         
                         xl:text-[5rem]
                         xl:leading-[120%]">
@@ -103,11 +105,11 @@ const Skills = () => {
                         <ul>Greensock</ul>
                         <br></br>
                     </div>
-                    <div className="hidden xl:block w-[20rem]">
+                    {/* <div className="hidden xl:block w-[20rem]">
                         <h1 className="text-rose-500 smallShadow">{"<"} Workflow {"/>"} </h1>
                         <ul>SCRUM</ul>
                         <ul>Git</ul>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* NOT hidden on mobile */}

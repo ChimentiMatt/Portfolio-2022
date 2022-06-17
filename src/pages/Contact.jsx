@@ -39,20 +39,8 @@ export const Contact = () => {
   return (
     <div className="text-white items-center flex mt-[10rem] md:mt-0 h-[100vh] relative left-0  ">
         <div id="contactPage" className=" flex flex-col ">
-            <div className=" 
-                flex
-                flex-col          
-                pl-[1rem]
-                md:pl-[5rem] 
-            ">
-            <div className="
-                    flex 
-                    leading-[140%]  
-                    text-[3.5rem]
-                    font-bold
-                    mt-[2.5rem]
-                    md:text-[5rem]
-                    md:leading-[120%]">
+            <div className="flex flex-col pl-[1rem] md:pl-[5rem]">
+            <div className="flex leading-[140%] text-[3.5rem] font-bold mt-[2.5rem] md:text-[5rem] md:leading-[120%]">
                     <h1 id="contact_C" className="text-rose-500 hover:text-teal-500 opacity-0 titleShadow">C</h1>
                     <h1 id="contact_o" className="text-rose-500 hover:text-teal-500 opacity-0 titleShadow">o</h1>
                     <h1 id="contact_n" className="text-rose-500 hover:text-teal-500 opacity-0 titleShadow ">n</h1>
@@ -65,7 +53,6 @@ export const Contact = () => {
                     <h1 id="contact_e" className="text-teal-500 hover:text-teal-500 opacity-0 titleShadow">e</h1>
                 </div>
             <div className="mt-5 mb-5 w-[95%]">
-                {/* <p className="mb-2 text-rose-500 smallShadow">{"<"} Mario Composer {"/>"}</p> */}
                 <h1>Have something you want built? Send me a message and we can grab digital coffee.</h1>
             </div>
             <ContactForm />

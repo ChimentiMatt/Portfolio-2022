@@ -7,28 +7,17 @@ import { Contact } from "./pages/Contact";
 
 function App() {
 
-  
   return (
-    <div className="
-      App 
-      
-      flex">
+    <div className="App flex">
       <Sidebar />
-      <div className="
-        flex 
-        flex-col 
-        w-screen
-
-        md:pl-[8rem]
-
-        ">
+      <div className="flex flex-col w-screen md:pl-[8rem]">
           <Home />
           <About />
           <Projects />
-        <div id='backgroundEffect'>
-          <Skills />
-          <Contact />
-        </div>
+          <div id='backgroundEffect'>
+            <Skills />
+            <Contact />
+          </div>
       </div>
     </div>
   );

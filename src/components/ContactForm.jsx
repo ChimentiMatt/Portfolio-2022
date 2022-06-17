@@ -26,6 +26,7 @@ const ContactForm = () => {
 
     const sendEmail = (e) => {
         e.preventDefault()
+        console.log(e.target[0].id + ' is a string')
 
         // Check if form is filled out
         if (e.target[0].value !== '' && e.target[1].value !== '' && e.target[2].value !== '' && e.target[3].value !== ''){
@@ -33,11 +34,16 @@ const ContactForm = () => {
             // Send email
             emailjs.sendForm('service_eteo1ua', "template_869gumn", e.target, 'user_36LBaEeyrSAXckH2SDyR7')
             .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
+                    console.log('SUCCESS!', response.status, response.text);
                 }, function(error) {
-                console.log('FAILED...', error);
+                    console.log('FAILED...', error);
                 });
         }
+        // Make red visuals for if the field was not filled out
+        if (e.target[0].value === '') document.getElementById("nameForm").style.borderBottom = '3px red solid' 
+        if (e.target[1].value === '') document.getElementById("emailForm").style.borderBottom = '3px red solid' 
+        if (e.target[2].value === '') document.getElementById("subjectForm").style.borderBottom = '3px red solid' 
+        if (e.target[3].value === '') document.getElementById("messageForm").style.borderBottom = '3px red solid' 
     }
 
   return (

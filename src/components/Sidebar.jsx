@@ -13,6 +13,7 @@ const Sidebar = ({handleClick}) => {
   return (
     <div className="
         hidden
+        z-10
         realative
         fixed
         mr-[50rem]

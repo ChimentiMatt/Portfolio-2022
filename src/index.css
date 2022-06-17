@@ -12,11 +12,6 @@ body {
   background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000,  #ffffff);
 }
 
-@media only screen and (max-width: 1000px) {
-  body{
-    background: black;
-  }
-}
 
 #homePage{
   /* background-image: linear-gradient(to right top, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000); */
@@ -59,12 +54,11 @@ button:focus {
     outline: none;
 }
 
-#test3{
-  /* justify-content: space-between; */
-  
-}
-
-
-#H{
-  /* position: absolute; */
+@media only screen and (max-width: 1000px) {
+  body{
+    background: black;
+  }
+  #backgroundEffect{
+    background: black;
+  }
 }

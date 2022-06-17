@@ -39,8 +39,7 @@ const Projects = ({ref}) => {
     }
     
   return (
-    <div 
-        className="bg-whiteflex h-[110vh] md:h-[100vh]  relative left-0  ">
+    <div className="bg-whiteflex h-[80vh] min-h-[45rem]  md:h-[100vh]  relative left-0 ">
         <div id="projectsPage" className="opacity-0 flex flex-row ">
             <div className=" 
                 flex
@@ -54,7 +53,7 @@ const Projects = ({ref}) => {
                     leading-[140%]  
                     text-[3.5rem]
                     font-bold
-                    mt-[2.5rem]
+                    mt-[6rem]
                     md:text-[5rem]
                     md:leading-[120%]">
                     <h1 id="projects_M" className="text-rose-500 hover:text-teal-500 opacity-0 titleShadow">M</h1>
@@ -72,9 +71,9 @@ const Projects = ({ref}) => {
                 <div className="flex flex-col justify-between mt-5 w-[90vw] h-[80vh]  md:w-[75vw] md:h-[20rem]">
                     <div>
                         
-                        <div className="flex flex-col text-white md:flex-row">
-                            <img className="md:h-[12rem] " src={MarioComposer} />
-                            <div className="hidden ml-[2rem] md:flex md:flex-col ">
+                        <div className="flex flex-col text-white md:flex-row premobile:items-center">
+                            <img className="md:h-[10rem]  md:w-auto  premobile:w-[80%]" src={MarioComposer} />
+                            <div className="hidden ml-[2rem] md:flex md:flex-col max-h-[15rem] overflow-x-hidden lg:overflow-y-hidden overflow-scroll">
                                 <p className="mb-2 text-rose-500 smallShadow">{"<"} Mario Composer {"/>"}</p>
                                 <p className="">A MERN Stack application based on the Super Nintendo game Mario Paint Composer. Build a song by placing notes on the music sheet. Change the note from sounds like a piano or trumpet. Change the note type from durations like a quarter note or half note. Save your song with a user's system that is not required. </p>
                                 <p className="mt-3">Have fun! It's a joy to play around on. </p>
@@ -84,9 +83,9 @@ const Projects = ({ref}) => {
                         </div>
                     </div>
                     <div className="mt-5 mb-5  ">
-                        <div className="flex flex-col text-white md:flex-row">
-                            <img className="md:h-[12rem] "  src={Pokemon} />
-                            <div className="hidden ml-[2rem] md:flex md:flex-col  ">
+                        <div className="flex flex-col text-white md:flex-row premobile:items-center">
+                            <img className="md:h-[10rem] md:w-auto premobile:w-[80%] "  src={Pokemon} />
+                            <div className="hidden ml-[2rem] md:flex md:flex-col max-h-[15rem] overflow-x-hidden lg:overflow-y-hidden overflow-scroll">
                                 <p className="mb-2 text-rose-500 smallShadow">{"<"} Pokémon! Simulator {"/>"}</p>
                                 <p className="">Play a mock version of the Pokemon Gameboy game built using only vanilla Javascript. Use Charmander to battle and catch Pokémon. See if you can catch them all. Your progress is tracked in your Pokédex.</p>
                                 <p className="mt-3">How to play: Use the Arrow Keys and Enter. You can also click on the Gameboys buttons or click inside of the Gameboy screen. At any point, the start button will show you the Pokedex. </p>
@@ -98,9 +97,9 @@ const Projects = ({ref}) => {
 
                     <div className="">
     
-                        <div className="flex flex-col text-white md:flex-row">
-                            <img className="md:h-[12rem]  "  src={LinguistAssist} />
-                            <div className="hidden ml-[2rem] md:flex md:flex-col  ">
+                        <div className="flex flex-col text-white md:flex-row premobile:items-center">
+                            <img  className="md:h-[10rem]  md:w-auto  premobile:w-[80%]"  src={LinguistAssist} />
+                            <div className="hidden ml-[2rem] md:flex md:flex-col max-h-[15rem] overflow-x-hidden lg:overflow-y-hidden overflow-scroll">
                                 <p className="mb-2 text-rose-500 smallShadow">{"<"} Linguist Assist {"/>"}</p>
                                 <p className="">Built with Django and Vue.js, this application is designed to help students,  and second language learners to help improve spelling.</p>
                                 <p className="mt-3">Quiz yourself; hear words and definitions and typo it out to see if you spelled the word correct. Your missed words will be instantly stored, so you can learn from your mistakes.</p>

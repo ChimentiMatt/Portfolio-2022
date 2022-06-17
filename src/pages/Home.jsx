@@ -53,26 +53,8 @@ const Home = () => {
     }
 
   return (
-    <div id="homePage" className="  min-h-[45rem]
-        flex
-        flex-col
-        justify-center
-        h-screen 
-        text-white
-        "
-    >
-        <div className="
-            text-[3.5rem]
-            font-bold
-            pl-[1rem]
-            leading-[140%]
-
-            
-            md:pl-[5rem] 
-            md:text-[5rem]
-            md:leading-[120%]
-            "
-        >
+    <div id="homePage" className="flex flex-col justify-center h-screen min-h-[45rem] text-white">
+        <div className="text-[3.5rem] font-bold pl-[1rem] leading-[140%] md:pl-[5rem] md:text-[5rem] md:leading-[120%]">
             <div className="flex">
                 <h1 id="H" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>H</h1>
                 <h1 id="e" className="hover:text-teal-500 opacity-0" onMouseEnter={hoverAnimate}>e</h1>
@@ -174,47 +156,14 @@ const Home = () => {
         </div>
         <div>
             <Link to="contactPage" spy={true} smooth={true}>
-                <button id="contactMeBtn" onMouseEnter={hoverButton} onMouseLeave={exitHoverButton} className="
-                    opacity-0
-                    relative
-                    top-10
-                    text-[1.5rem]
-                    text-teal-500
-                    
-                    shadowText
-                    p-[.5rem]
-                    pl-[2rem]
-                    pr-[2rem]
-                    ml-[1rem] 
-                    mt-[1rem]
-                    bg-black
-                    border-2 
-                    border-teal-600
-                    
-                    
-                    md:ml-[5rem] 
-                    md:mt-[2.5rem]  
-                    "
-                >Contact me</button>
+                <button id="contactMeBtn" onMouseEnter={hoverButton} onMouseLeave={exitHoverButton} className="opacity-0 relative top-10 text-[1.5rem] 
+                    text-teal-500 shadowText p-[.5rem] pl-[2rem] pr-[2rem] ml-[1rem] mt-[1rem] bg-black border-2 border-teal-600 md:ml-[5rem] md:mt-[2.5rem]">
+                    Contact me
+                </button>
             </Link>
         </div>
-        <div className="
-            absolute
-            flex
-            justify-center
-            bottom-2
-            ml-[4.9rem]
-
-            md:left-[45%]
-            md:bottom-10
-        ">
-            <GoChevronDown id='chevronDown' className="
-                opacity-0 
-                h-[4rem] 
-                w-[4rem]
-                text-teal-500"
-                
-            />
+        <div className="absolute flex justify-center bottom-2 ml-[4.9rem] md:left-[45%] md:bottom-10">
+            <GoChevronDown id='chevronDown' className="hidden opacity-0 h-[4rem] w-[4rem]text-teal-500 md:flex"/>
         </div>
     </div>
   )

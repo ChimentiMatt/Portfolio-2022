@@ -13,15 +13,15 @@ export const Contact = ({toast}) => {
         gsap.registerPlugin(ScrollTrigger);
         
         ScrollTrigger.create({
-            trigger: "#projects_M",
+            trigger: "#contact_C",
             onEnter: textAppearing,
-            start: "center 700",
-            end: "center 700 ",
+            start: "center 600",
+            end: "center 600 ",
             // markers: true
         })
     })
     const textAppearing = () => {
-        gsap.to('#projectsPage', {opacity: 1})
+        gsap.to('#contactForm, #contactText', {opacity: 1})
         let time = 0
         for (const element of targets){
             let tl = gsap.timeline({repeat: 0})
@@ -37,10 +37,10 @@ export const Contact = ({toast}) => {
     }
 
   return (
-    <div className="text-white items-center flex mt-[10rem] md:mt-0 h-[100vh] relative left-0  ">
-        <div id="contactPage" className=" flex flex-col ">
+    <div id="contactPage" className="text-white items-center flex mt-[10rem] md:mt-0 h-[100vh] relative left-0  ">
+        <div className=" flex flex-col ">
             <div className="flex flex-col pl-[1rem] md:pl-[5rem]">
-            <div className="flex leading-[140%] text-[3.5rem] font-bold mt-[2.5rem] md:text-[5rem] md:leading-[120%]">
+                <div className="flex leading-[140%] text-[3.5rem] font-bold mt-[2.5rem] md:text-[5rem] md:leading-[120%]">
                     <h1 id="contact_C" className="text-rose-500 hover:text-teal-500 opacity-0 titleShadow">C</h1>
                     <h1 id="contact_o" className="text-rose-500 hover:text-teal-500 opacity-0 titleShadow">o</h1>
                     <h1 id="contact_n" className="text-rose-500 hover:text-teal-500 opacity-0 titleShadow ">n</h1>
@@ -52,7 +52,7 @@ export const Contact = ({toast}) => {
                     <h1 id="contact_M" className="text-teal-500 hover:text-teal-500 opacity-0 titleShadow pl-2 md:pl-5">M</h1>
                     <h1 id="contact_e" className="text-teal-500 hover:text-teal-500 opacity-0 titleShadow">e</h1>
                 </div>
-            <div className="mt-5 mb-5 w-[95%]">
+            <div id="contactText" className="opacity-0 mt-5 mb-5 w-[95%]">
                 <h1>Have something you want built? Send me a message and we can grab digital coffee.</h1>
             </div>
             <ContactForm toast={toast}/>

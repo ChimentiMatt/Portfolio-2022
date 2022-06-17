@@ -41,21 +41,8 @@ const Projects = ({ref}) => {
   return (
     <div className="bg-whiteflex h-[80vh] min-h-[45rem]  md:h-[100vh]  relative left-0 ">
         <div id="projectsPage" className="opacity-0 flex flex-row ">
-            <div className=" 
-                flex
-                flex-col
-                
-                
-                pl-[1rem]
-                md:pl-[5rem] ">
-                <div className="
-                    flex 
-                    leading-[140%]  
-                    text-[3.5rem]
-                    font-bold
-                    mt-[6rem]
-                    md:text-[5rem]
-                    md:leading-[120%]">
+            <div className="flex flex-col pl-[1rem] md:pl-[5rem]">
+                <div className="flex leading-[140%] text-[3.5rem] mt-[6rem] md:text-[5rem] md:leading-[120%]">
                     <h1 id="projects_M" className="text-rose-500 hover:text-teal-500 opacity-0 titleShadow">M</h1>
                     <h1 id="projects_y" className="text-rose-500 hover:text-teal-500 opacity-0 titleShadow">y</h1>
 

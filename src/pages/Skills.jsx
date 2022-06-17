@@ -13,8 +13,8 @@ const Skills = () => {
         ScrollTrigger.create({
             trigger: "#skills_M",
             onEnter: textAppearing,
-            start: "center 700",
-            end: "center 700 ",
+            start: "center 600",
+            end: "center 600 ",
             // markers: true
         })
     })
@@ -36,33 +36,19 @@ const Skills = () => {
     }
 
   return (
-    <div id="skillsPage"  className="flex mt-[10rem] xl:mt-0 h-[80vh] items-center relative left-0 min-h-[50rem] ">
+    <div className="flex mt-[10rem] xl:mt-0 h-[80vh] items-center relative left-0 min-h-[50rem] ">
         <div id="skillsPage" className="opacity-0 mt-20 flex flex-col ">
-            <div className=" 
-                flex
-                flex-col          
-                pl-[1rem]
-                md:pl-[5rem] 
-                ">
-                <div className="
-                        flex 
-                        leading-[140%]  
-                        text-[3.5rem]
-                        md:mt-[0rem]
-                        md:text-[5rem]
-                        mt-[15rem]
-                        
-                        xl:text-[5rem]
-                        xl:leading-[120%]">
-                    <h1 id="skills_M" className="text-rose-500 hover:text-teal-500 titleShadow">M</h1>
-                    <h1 id="skills_y" className="text-rose-500 hover:text-teal-500 titleShadow">y</h1>
+            <div className="flex flex-col pl-[1rem] md:pl-[5rem]">
+                <div className="flex leading-[140%] text-[3.5rem] mt-[15rem] md:mt-[0rem] md:text-[5rem] xl:text-[5rem] xl:leading-[120%]">
+                    <h1 id="skills_M" className="opacity-0 text-rose-500 hover:text-teal-500 titleShadow">M</h1>
+                    <h1 id="skills_y" className="opacity-0 text-rose-500 hover:text-teal-500 titleShadow">y</h1>
 
-                    <h1 id="skills_S" className="text-teal-500 pl-2 xl:pl-5 hover:text-teal-500 titleShadow">S</h1>
-                    <h1 id="skills_k" className="text-teal-500 hover:text-teal-500 titleShadow">k</h1>
-                    <h1 id="skills_i" className="text-teal-500 hover:text-teal-500 titleShadow">i</h1>
-                    <h1 id="skills_l" className="text-teal-500 hover:text-teal-500 titleShadow">l</h1>
-                    <h1 id="skills_l_2" className="text-teal-500 hover:text-teal-500 titleShadow">l</h1>
-                    <h1 id="skills_s" className="text-teal-500 hover:text-teal-500 titleShadow">s</h1>
+                    <h1 id="skills_S" className="opacity-0 text-teal-500 pl-2 xl:pl-5 hover:text-teal-500 titleShadow">S</h1>
+                    <h1 id="skills_k" className="opacity-0 text-teal-500 hover:text-teal-500 titleShadow">k</h1>
+                    <h1 id="skills_i" className="opacity-0 text-teal-500 hover:text-teal-500 titleShadow">i</h1>
+                    <h1 id="skills_l" className="opacity-0 text-teal-500 hover:text-teal-500 titleShadow">l</h1>
+                    <h1 id="skills_l_2" className="opacity-0 text-teal-500 hover:text-teal-500 titleShadow">l</h1>
+                    <h1 id="skills_s" className="opacity-0 text-teal-500 hover:text-teal-500 titleShadow">s</h1>
                 </div>
 
                 <div className="text-white mt-2 xl:mt-5 xl:text-[2rem]">

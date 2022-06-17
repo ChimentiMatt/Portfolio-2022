@@ -6,8 +6,6 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-      // 'tablet': '1000px',
-
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -17,10 +15,10 @@ module.exports = {
       // => @media (min-width: 768px) { ... }
 
       'lg': '1070px',
-      // => @media (min-width: 1024px) { ... }
+      // note Adjusted => @media (min-width: 1024px) { ... }
 
       'xl': '1320px',
-      // => @media (min-width: 1280px) { ... }
+      // note Adjusted => @media (min-width: 1280px) { ... }
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }

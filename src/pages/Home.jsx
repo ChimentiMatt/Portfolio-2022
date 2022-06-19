@@ -3,6 +3,8 @@ import {Link} from 'react-scroll'
 import gsap from "gsap"
 import { GoChevronDown } from 'react-icons/go'
 
+import HappyClound from "../images/happyCloud2.gif"
+
 const Home = () => {
     const targets = [
         'H', 'e', 'l', 'l_2', 'o', 'comma',
@@ -16,11 +18,18 @@ const Home = () => {
 
     useEffect(() => {
         textAppearing()
+        let tl = gsap.timeline({repeat: -1})
+
+
+        gsap.to('#happyCloud', {delay: 2, opacity: 1})
+        tl.to('#happyCloud', {x: '5vw', duration: 10})
+        tl.to('#happyCloud', {x: '0vw', duration: 10})
     })
 
     const textAppearing = () => {
         let time = 0
         for (const element of targets){
+            
             let tl = gsap.timeline({repeat: 0})
             tl.to("#" + element, { delay: time, opacity: 1, ease: 'none', transition: .2})
             tl.to("#" + element, { delay: time, opacity: 1, ease: 'none'})
@@ -46,8 +55,9 @@ const Home = () => {
     }
 
   return (
-    <div id="homePage" className="flex flex-col md:pl-[2rem] justify-center h-screen min-h-[45rem] text-white">
-        <div className="text-[3.5rem] font-bold pl-[1rem] leading-[140%] lg:pl-[10rem] md:text-[5rem] md:leading-[120%]">
+    <div id="homePage" className="flex flex-col md:pl-[2rem] justify-center h-screen md:h-[59rem] text-white">
+        <img id="happyCloud" className="absolute opacity-0 h-[10rem] top-0 right-[2rem] md:right-[10rem]" src={HappyClound} />
+        <div className="text-[4rem] font-bold pl-[1rem] leading-[110%] lg:pl-[10rem]  md2:text-[5rem] md:leading-[120%]">
             <div className="flex">
                 <h1 id="H" className="hover:text-teal-600 opacity-0" onMouseEnter={hoverAnimate}>H</h1>
                 <h1 id="e" className="hover:text-teal-600 opacity-0" onMouseEnter={hoverAnimate}>e</h1>

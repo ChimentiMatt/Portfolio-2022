@@ -4,6 +4,9 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 
 import ContactForm from "../components/ContactForm"
 
+import Celebrate from "../images/celebrate.gif"
+import DuckDance from "../images/duckDance.gif"
+
 export const Contact = ({toast}) => {
     const targets = [
         'contact_C', 'contact_o', 'contact_n', 'contact_t', 'contact_a', 'contact_c', 'contact_t_2',
@@ -37,8 +40,8 @@ export const Contact = ({toast}) => {
     }
 
   return (
-    <div id="contactPage" className="text-white items-center flex mt-[10rem] h-[100vh] relative left-0  md:mt-0 md:ml-[2rem]  ">
-        <div className=" flex flex-col ">
+    <div id="contactPage" className="text-white items-center flex h-[100vh] relative left-0  md:mt-0 md:ml-[2rem]">
+        <div className="relative z-10 flex flex-col ">
             <div className="flex flex-col pl-[1rem] lg:pl-[10rem]">
                 <div className="flex leading-[140%] text-[3.5rem] font-bold mt-[2.5rem] md:text-[5rem] md:leading-[120%]">
                     <h1 id="contact_C" className="text-white hover:text-teal-600 opacity-0 ">C</h1>
@@ -52,12 +55,14 @@ export const Contact = ({toast}) => {
                     <h1 id="contact_M" className="text-white hover:text-teal-600 opacity-0  pl-2 md:pl-5">M</h1>
                     <h1 id="contact_e" className="text-white hover:text-teal-600 opacity-0 ">e</h1>
                 </div>
-            <div id="contactText" className="opacity-0 mt-5 mb-5 w-[95%]">
-                <h1>Have something you want built? Send me a message and we can grab digital coffee.</h1>
-            </div>
+                <div id="contactText" className="opacity-0 mb-[1rem] w-[95%]">
+                    <h1>Have something you want built? Send me a message and we can grab digital coffee.</h1>
+                </div>
                 <ContactForm toast={toast}/>
             </div>
         </div>
+        <img id="celebrate" className="absolute lg:left-[50%] z-0 opacity-0" src={Celebrate} alt="fireworks" />
+        <img id="duckDance" className="absolute lg:left-[60%] left-[7rem] h-[10rem] bottom-[5rem] md:bottom-[10rem] z-0 opacity-0" src={DuckDance} alt="dancing duck"/>
     </div>
   )
 }

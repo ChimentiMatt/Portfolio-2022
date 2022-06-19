@@ -59,15 +59,6 @@ body {
   text-shadow: 1px 1px #14b8a6;
 }
 
-#Matt{
-  /* text-shadow: 2px 2px #f43f5e; */
-  /* text-shadow: 2px 2px white; */
-}
-
-#Matt:hover{
-  text-shadow: 1px 1px #14b8a6;
-}
-
 #bodyShot{
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
@@ -81,33 +72,33 @@ button:focus {
 
 .swiper-button-prev:after{
   color: white;
+  position: relative;
+  left: .5rem;
+  bottom: 9rem;
 }
 .swiper-button-next:after{
-  /* padding-left: 1.5rem; */
   color: white;
-  /* position: absolute;
-  right: 0;
-  top: 0; */
+  position: relative;
+  bottom: 9rem;
 }
 
 
 
-@media only screen and (max-width: 768px) {
-  body{
-    background: black;
-  }
-  #backgroundEffect{
-    background: black;
-  }
-
-}
-
-@media only screen and (max-width: 1070px) {
-  .swiper-button-next:after{
-    padding-left: 0;
+@media only screen and (min-width: 768px) {
+  .swiper-button-prev:after{
     position: relative;
-    /* right: .5rem; */
+    left: 2rem;
+    bottom: 0;
+  }
+  .swiper-button-next:after{
+    bottom: 0;
+  }
+}
 
+@media only screen and (min-width: 1071px) {
+  .swiper-button-prev:after{
+    position: relative;
+    left: 12rem;
   }
 }
 

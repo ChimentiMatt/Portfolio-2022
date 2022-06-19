@@ -26,16 +26,18 @@ const ContactForm = ({toast}) => {
         if (e.target[0].value !== '' && e.target[1].value !== '' && e.target[2].value !== '' && e.target[3].value !== '' && !formSent){
             formSent = true
             // Send email
-            emailjs.sendForm('service_eteo1ua', "template_869gumn", e.target, 'user_36LBaEeyrSAXckH2SDyR7')
-            .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                }, function(error) {
-                    console.log('FAILED...', error);
-                });
+            // emailjs.sendForm('service_eteo1ua', "template_869gumn", e.target, 'user_36LBaEeyrSAXckH2SDyR7')
+            // .then(function(response) {
+            //         console.log('SUCCESS!', response.status, response.text);
+            //     }, function(error) {
+            //         console.log('FAILED...', error);
+            //     });
+
+            document.querySelector('#celebrate').style.opacity = '1'
+            document.querySelector('#duckDance').style.opacity = '1'
 
             toast()
-            document.getElementById('contactBtn').style.color = 'white'
-            document.getElementById('contactForm').style.opacity = .4
+            document.getElementById('contactForm').style.opacity = .2
             document.getElementById('contactBtn').style.pointerEvents = 'none'
             document.getElementById('nameForm').style.pointerEvents = 'none'
             document.getElementById('emailForm').style.pointerEvents = 'none'

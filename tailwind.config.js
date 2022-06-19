@@ -14,6 +14,8 @@ module.exports = {
       'md': '768px',
       // => @media (min-width: 768px) { ... }
 
+      'md2': '830px',
+
       'lg': '1070px',
       // note Adjusted => @media (min-width: 1024px) { ... }
 

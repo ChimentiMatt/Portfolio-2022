@@ -3,12 +3,6 @@ import GitHubIcon from '../images/GitHub.png'
 import LinkedInIcon from '../images/linkedin.png'
 
 const Sidebar = ({handleClick}) => {
-    const shadowMatt = () => {
-        document.getElementById('Matt').style.textShadow = '2px 2px #14b8a6'
-    }
-    const restoreMatt = () => {
-        document.getElementById('Matt').style.textShadow = '2px 2px #f43f5e'
-    }
 
   return (
     <div className="
@@ -22,18 +16,17 @@ const Sidebar = ({handleClick}) => {
         w-[8rem]
         h-screen
         bg-black
-        border-r-[1px]
+        border-r-[2px]
 
         border-white
     
         lg:flex">
-        <div className='bg-white border-b-[1px] border-stone-800 text-black text-center hover:bg-black hover:text-white'>
+        <div className='bg-black border-b-[2px] border-white text-white text-center hover:bg-white hover:cursor-pointer hover:text-black'>
             <Link to="homePage" spy={true} smooth={true}>
-                <h1 id="Matt" className="
+                <h1 className="
                     text-[2rem]
                     pt-[1.5rem]
-                    "
-                    >Matt
+                    ">Matt
                 </h1>
                 <p className="
                     relative
@@ -72,7 +65,9 @@ const Sidebar = ({handleClick}) => {
                 pb-[1rem]
                 border-t-[1px]
                 border-stone-800
-                hover:text-teal-600
+                hover:cursor-pointer
+                hover:bg-white
+                hover:text-black
                 ">
                 <Link to="aboutPage" spy={true} smooth={true}>About</Link>
             </ul>
@@ -84,8 +79,10 @@ const Sidebar = ({handleClick}) => {
                 pt-[1rem]
                 pb-[1rem]
                 border-t-[1px]
+                hover:cursor-pointer
                 border-stone-800
-                hover:text-teal-600
+                hover:bg-white
+                hover:text-black
                 ">
                 <Link to="topOfProjects" spy={true} smooth={true}>Projects</Link>
             </ul>
@@ -96,10 +93,13 @@ const Sidebar = ({handleClick}) => {
                 pt-[1rem]
                 pb-[1rem]
                 border-t-[1px]
+                hover:cursor-pointer
                 border-stone-800
-                hover:text-teal-600"
+                hover:bg-white
+                hover:text-black
+                "
                 > 
-                <Link to="skillsPage" spy={true} smooth={true}>Skills</Link>
+                <Link to="skillsTarget" spy={true} smooth={true}>Skills</Link>
             </ul>
             <ul className="
                 text-center
@@ -109,8 +109,11 @@ const Sidebar = ({handleClick}) => {
                 pb-[1rem]
                 border-t-[1px]
                 border-b-[1px]
+                hover:cursor-pointer
                 border-stone-800
-                hover:text-teal-600"
+                hover:bg-white
+                hover:text-black
+                "
                 > 
                 <Link to="contactPage" spy={true} smooth={true}>Contact</Link>
             </ul>
@@ -127,17 +130,20 @@ const Sidebar = ({handleClick}) => {
                     text-center
                     text-[1rem]
                     text-white
-                    hover:text-teal-600"
-                    ><img className="h-5 hover:bg-teal-600  hover:rounded-sm" src={LinkedInIcon} />
+                    hover:cursor-pointer
+                    hover:invert
+                    "
+                    ><img className="h-5 hover:bg-black  hover:rounded-[20%]" src={LinkedInIcon} />
                 </li>
                 <li className="
                     text-center
                     text-[1rem]
                     text-white
-                    hover:text-teal-600
+                    hover:cursor-pointer
+                    hover:invert
                     pl-2
                     "
-                    ><img className="h-5 hover:bg-teal-600 hover:rounded-lg" src={GitHubIcon} />
+                    ><img className="h-5 hover:bg-black hover:rounded-lg" src={GitHubIcon} />
                 </li>
             </div>
         </div>

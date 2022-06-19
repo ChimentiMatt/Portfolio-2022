@@ -61,7 +61,7 @@ const About = () => {
 
                 <div className="text-[1rem] w-[90vw] sm:w-[70vw] lg:w-[30rem]">
                     <p className="text-teal-600">{"<"} Developer {"/>"}</p>
-                    <p>I am a developer living in Oregon who has a passion for making creative front-end focused applications. I find pushing myself to create something bigger and better to be a never-ending supply of excitement and motivation.</p>
+                    <p>I am a developer living in Oregon who has a passion for making creative front-end focused applications. I find pushing myself to create something bigger and better to be a never-ending supply of excitement and motivation as I freelance, and work on passion projects. </p>
 
                     <p className="text-teal-600 mt-5">{"<"} Student {"/>"}</p>
                     <p className="mb-5">Currently, I am two months away from finishing my Bridge to Master of Software at GCU then I begin the formal Masters. My GPA is a 4.0, and I will keep perfect marks throughout  my acedemia. </p>

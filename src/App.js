@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App flex">
       <Sidebar />
-      <div className="flex flex-col w-screen md:pl-[8rem]">
+      <div className="flex flex-col w-screen ">
           <Home />
           <About />
           <Projects />

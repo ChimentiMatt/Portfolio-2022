@@ -10,11 +10,34 @@ body {
   box-sizing: border-box;
   font-family: 'Heebo', sans-serif;
   background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000,  #ffffff);
+  /* overflow-x: hidden; */
 }
 
 *{
-  /* border: 1px solid red */
+  /* border: 1px solid red; */
+  /* max-width: 1920px; */
 }
+
+.test{
+  object-fit: contain;
+  /* overflow: hidden; */
+}
+
+
+.contactBtn{
+  display: inline-block;
+  text-align: center;
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(to left, #ffffff 50%, #000000 50%) right;
+  background-size: 200%;
+  /* filter: invert(100%); */
+  transition: .5s ease-out;
+}
+
+.contactBtn:hover{
+  background-position: left;
+}
+
 
 #homePage{
   /* background-image: linear-gradient(to right top, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000); */
@@ -37,7 +60,8 @@ body {
 }
 
 #Matt{
-  text-shadow: 2px 2px #f43f5e;
+  /* text-shadow: 2px 2px #f43f5e; */
+  /* text-shadow: 2px 2px white; */
 }
 
 #Matt:hover{
@@ -55,13 +79,35 @@ button:focus {
     outline: none;
 }
 
-@media only screen and (max-width: 1000px) {
+.swiper-button-prev:after{
+  color: white;
+}
+.swiper-button-next:after{
+  /* padding-left: 1.5rem; */
+  color: white;
+  /* position: absolute;
+  right: 0;
+  top: 0; */
+}
+
+
+
+@media only screen and (max-width: 768px) {
   body{
     background: black;
   }
   #backgroundEffect{
     background: black;
   }
+
 }
 
+@media only screen and (max-width: 1070px) {
+  .swiper-button-next:after{
+    padding-left: 0;
+    position: relative;
+    /* right: .5rem; */
+
+  }
+}
 

@@ -58,7 +58,7 @@ const ContactForm = ({toast}) => {
             <input id="subjectForm" onClick={accentField} name="subject" className="bg-white p-2 mb-2 border-2 border-white md:p-4" placeholder="Subject"></input>
             <textarea id="messageForm" onClick={accentField} name="message" className="bg-white p-2 h-full border-2 border-white  md:p-4" placeholder="Message"></textarea>
         <div className="flex justify-end">
-            <button id="contactBtn" className=" p-3 pl-12 pr-12 mt-[2rem]  text-teal-500 border-2 border-teal-500 hover:text-black hover:bg-white bg-black md:bg-black">Send Message</button>
+            <button id="contactBtn" className="contactBtn p-3 pl-12 pr-12 mt-[2rem] border-2 border-white  hover:bg-black hover:text-white ">Send Message</button>
         </div>
     </form>
   )

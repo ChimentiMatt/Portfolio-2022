@@ -23,39 +23,41 @@ const Sidebar = ({handleClick}) => {
         h-screen
         bg-black
         border-r-[1px]
+
         border-white
     
-        md:flex">
-        <div onMouseEnter={shadowMatt} onMouseLeave={restoreMatt} className='bg-teal-500 text-white text-center hover:bg-rose-500'>
+        lg:flex">
+        <div className='bg-white border-b-[1px] border-stone-800 text-black text-center hover:bg-black hover:text-white'>
             <Link to="homePage" spy={true} smooth={true}>
-            <h1 id="Matt" className="
-                text-[2rem]
-                pt-[1.5rem]
-                "
-            >Matt</h1>
-            <p className="
-                relative
-                bottom-2.5
-                text-center
-                text-[.7rem]
-                "
-            >{"<"} Developer  {"/>"}
-            </p>
-            <p className="
-                relative
-                bottom-3
-                text-center
-                text-[.7rem]
-                "
-            >{"<"} Student {"/>"}
-            </p>
-            <p className="
-                relative
-                bottom-3.5
-                text-[.7rem]
-                pb-[1.5rem]"
-            >{"<"} Teacher {"/>"}
-            </p>
+                <h1 id="Matt" className="
+                    text-[2rem]
+                    pt-[1.5rem]
+                    "
+                    >Matt
+                </h1>
+                <p className="
+                    relative
+                    bottom-2.5
+                    text-center
+                    text-[.7rem]
+                    "
+                >{"<"} Developer  {"/>"}
+                </p>
+                <p className="
+                    relative
+                    bottom-3
+                    text-center
+                    text-[.7rem]
+                    "
+                >{"<"} Student {"/>"}
+                </p>
+                <p className="
+                    relative
+                    bottom-3.5
+                    text-[.7rem]
+                    pb-[1.5rem]"
+                >{"<"} Teacher {"/>"}
+                </p>
             </Link>
         </div>
         
@@ -70,7 +72,7 @@ const Sidebar = ({handleClick}) => {
                 pb-[1rem]
                 border-t-[1px]
                 border-stone-800
-                hover:text-teal-500
+                hover:text-teal-600
                 ">
                 <Link to="aboutPage" spy={true} smooth={true}>About</Link>
             </ul>
@@ -83,9 +85,9 @@ const Sidebar = ({handleClick}) => {
                 pb-[1rem]
                 border-t-[1px]
                 border-stone-800
-                hover:text-teal-500
+                hover:text-teal-600
                 ">
-                <Link to="projectsPage" spy={true} smooth={true}>Projects</Link>
+                <Link to="topOfProjects" spy={true} smooth={true}>Projects</Link>
             </ul>
             <ul className="
                 text-center
@@ -95,7 +97,7 @@ const Sidebar = ({handleClick}) => {
                 pb-[1rem]
                 border-t-[1px]
                 border-stone-800
-                hover:text-teal-500"
+                hover:text-teal-600"
                 > 
                 <Link to="skillsPage" spy={true} smooth={true}>Skills</Link>
             </ul>
@@ -108,7 +110,7 @@ const Sidebar = ({handleClick}) => {
                 border-t-[1px]
                 border-b-[1px]
                 border-stone-800
-                hover:text-teal-500"
+                hover:text-teal-600"
                 > 
                 <Link to="contactPage" spy={true} smooth={true}>Contact</Link>
             </ul>
@@ -125,17 +127,17 @@ const Sidebar = ({handleClick}) => {
                     text-center
                     text-[1rem]
                     text-white
-                    hover:text-teal-500"
-                    ><img className="h-5 hover:bg-teal-500  hover:rounded-sm" src={LinkedInIcon} />
+                    hover:text-teal-600"
+                    ><img className="h-5 hover:bg-teal-600  hover:rounded-sm" src={LinkedInIcon} />
                 </li>
                 <li className="
                     text-center
                     text-[1rem]
                     text-white
-                    hover:text-teal-500
+                    hover:text-teal-600
                     pl-2
                     "
-                    ><img className="h-5 hover:bg-teal-500 hover:rounded-lg" src={GitHubIcon} />
+                    ><img className="h-5 hover:bg-teal-600 hover:rounded-lg" src={GitHubIcon} />
                 </li>
             </div>
         </div>

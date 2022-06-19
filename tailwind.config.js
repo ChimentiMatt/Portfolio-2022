@@ -19,10 +19,16 @@ module.exports = {
       'lg': '1070px',
       // note Adjusted => @media (min-width: 1024px) { ... }
 
+      'lg2': '1150px',
+      // note Adjusted => @media (min-width: 1024px) { ... }
+
       'xl': '1320px',
       // note Adjusted => @media (min-width: 1280px) { ... }
 
       '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+
+      '3xl': '1736px',
       // => @media (min-width: 1536px) { ... }
     }
   },

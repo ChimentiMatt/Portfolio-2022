@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useGlobal } from 'reactn'
 import {Link} from 'react-scroll'
 import gsap from "gsap"
 import { GoChevronDown } from 'react-icons/go'
@@ -6,6 +6,8 @@ import { GoChevronDown } from 'react-icons/go'
 import HappyClound from "../images/happyCloud2.gif"
 
 const Home = () => {
+    const [silly, setSilly] = useGlobal("silly")
+    const [emailSent, setEmailSent] = useGlobal("emailSent")
     const targets = [
         'H', 'e', 'l', 'l_2', 'o', 'comma',
         'I', 'apostrophe', 'm',
@@ -19,12 +21,13 @@ const Home = () => {
     useEffect(() => {
         textAppearing()
         let tl = gsap.timeline({repeat: -1})
+        setEmailSent(false)
 
-        gsap.to('#happyCloud', {delay: 2, opacity: 1})
-        tl.to('#happyCloud', {x: '5vw', duration: 10})
-        tl.to('#happyCloud', {x: '0vw', duration: 10})
-    
-    })
+        if (silly){
+            tl.to('#happyCloud', {x: '5vw', duration: 10})
+            tl.to('#happyCloud', {x: '0vw', duration: 10})
+        }
+    }, [])
 
     const textAppearing = () => {
         let time = 0
@@ -56,7 +59,7 @@ const Home = () => {
 
   return (
     <div id="homePage" className="flex flex-col md:pl-[2rem] justify-center h-screen md:h-[59rem] text-white">
-        <img id="happyCloud" className="absolute opacity-0 h-[10rem] top-0 right-[2rem] md:right-[10rem]" src={HappyClound} alt="happy cloud gif"/>
+        <img id="happyCloud" className="absolute h-[10rem] top-0 right-[2rem] md:right-[10rem]" src={HappyClound} alt="happy cloud gif"/>
         <div className="text-[4rem] font-bold pl-[1rem] leading-[110%] lg:pl-[10rem]  md2:text-[5rem] md:leading-[120%]">
             <div className="flex">
                 <h1 id="H" className="hover:text-teal-600 opacity-0" onMouseEnter={hoverAnimate}>H</h1>

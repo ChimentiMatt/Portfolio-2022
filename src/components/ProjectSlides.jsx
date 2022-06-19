@@ -3,7 +3,7 @@ import { Navigation, Pagination  } from 'swiper';
 import gsap from "gsap"
 
 import MarioGif from '../images/MarioGif.gif'
-import MarioComposer from '../images/marioMusic.PNG'
+import MarioComposer from '../images/marioMusic.gif'
 import Pokemon from '../images/pokemon.PNG'
 import LinguistAssist from '../images/LA.PNG'
 

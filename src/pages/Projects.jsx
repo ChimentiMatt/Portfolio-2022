@@ -1,7 +1,8 @@
 import { useEffect } from "react"
 import gsap from "gsap"
-import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import ScrollTrigger from "gsap/dist/ScrollTrigger"
 import ProjectSlides from "../components/ProjectSlides"
+
 
 const Projects = ({ref}) => {
     const targets = [
@@ -18,7 +19,7 @@ const Projects = ({ref}) => {
             end: "center 700 ",
             // markers: true
         })
-    })
+    }, [])
 
     const textAppearing = () => {
         gsap.to('#projectsSection', {opacity: 1})

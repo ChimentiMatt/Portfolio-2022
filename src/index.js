@@ -13,7 +13,7 @@ const rehydrateState = () => {
   if (state) return JSON.parse(state)
 
   return {
-    silly: true,
+    silly: true
   }
 }
 

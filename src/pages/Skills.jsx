@@ -2,6 +2,10 @@ import { useEffect } from "react"
 import gsap from "gsap"
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 
+import ReactGif from "../images/reactGif.gif"
+import JavaScriptGif from "../images/JavaScriptGif.gif"
+import PythonGif from "../images/pythonGif.gif"
+
 const Skills = () => {
     const targets = [
         'skills_M', 'skills_y' ,'skills_S', 'skills_k', 'skills_i', 'skills_l', 'skills_l_2', 'skills_s'
@@ -17,7 +21,7 @@ const Skills = () => {
             end: "center 600 ",
             // markers: true
         })
-    })
+    }, [])
 
     const textAppearing = () => {
         gsap.to('#skillsPage', {opacity: 1})
@@ -91,13 +95,21 @@ const Skills = () => {
                         <ul>Greensock</ul>
                         <br></br>
                     </div>
-                    {/* <div className="hidden xl:block w-[20rem]">
-                        <h1 className="text-teal-600 smallShadow">{"<"} Workflow {"/>"} </h1>
-                        <ul>SCRUM</ul>
-                        <ul>Git</ul>
-                    </div> */}
-                </div>
+                    <div id="skillGifs" className="absolute h-0 xl:left-[55rem]">
+                        <div className="h-0">
+                            <img src={PythonGif} alt="Python Gif" className="relative rotate-[10deg] h-[8rem] top-[25rem] left-[13rem] xl:top-[27rem] xl:left-[-35rem]"></img>
+                        </div>
+                        <div className="h-0">
+                            <img src={ReactGif} alt="React Gif" className="relative rotate-[20deg] h-[8rem] top-[27rem] left-[0rem] xl:h-[15rem] xl:top-[7rem] xl:left-[6rem]"></img>
+                        </div>
+                        <div className="h-0">
+                            <img src={JavaScriptGif} alt="Javascript Gif" className="relative rotate-[10deg] h-[8rem] top-[15rem] left-[11rem] xl:top-[-10rem] xl:left-[10rem]"></img>
+                        </div>
 
+                    </div>
+                    
+                </div>
+          
                 {/* NOT hidden on mobile */}
                 <div className="text-white flex">
                     <div className="w-[9rem]  xl:hidden">
@@ -111,11 +123,8 @@ const Skills = () => {
                         <ul>Greensock</ul>
                         <br></br>
                     </div>
-                    <div className="ml-10 xl:hidden ">
-                        <h1 className="text-teal-600 smallShadow">{"<"} Workflow {"/>"} </h1>
-                        <ul>SCRUM</ul>
-                        <ul>Git</ul>
-                    </div>
+                
+
                 </div>
             </div>
             

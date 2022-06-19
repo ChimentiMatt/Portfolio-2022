@@ -1,5 +1,4 @@
 import gsap from "gsap"
-
 import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -14,12 +13,13 @@ function App() {
     gsap.to("#toast", {delay: 3, opacity: 0, y: '0', display: 'none'})
   }
 
+ 
   return (
     <div className="App flex">
       <Sidebar />
       <div className="flex flex-col w-screen ">
-          <Home />
-          <About />
+          <Home/>
+          <About/>
           <Projects />
           <div id='backgroundEffect'>
             <Skills />
@@ -28,6 +28,9 @@ function App() {
           <div id="toast" className="fixed z-20 opacity-0 hidden justify-center items-center w-[10rem] h-11 bottom-5 left-[50%] border-2 text-white border-rose-600 bg-rose-600">
             Message Sent!
           </div>
+      </div>
+      <div className="fixed top-[1.5rem] right-[-5.5rem] rotate-[45deg] hover:cursor-pointer ">
+        <button id="sillyBtn" className="bg-red-800 text-white p-[.5rem] pl-[5rem] pr-[5rem] hover:bg-black hover:text-white">Silly Mode On</button>
       </div>
     </div>
   );

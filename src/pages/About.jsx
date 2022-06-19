@@ -1,8 +1,11 @@
 import { useEffect } from "react"
 import gsap from "gsap"
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
-import Matt from '../images/bodyShot.jpeg'
 
+import Matt from '../images/bodyShot.jpeg'
+import TextBubble from '../images/textBubbleStatic.png'
+import Mustache from '../images/mustache.gif'
+import EyePatch from '../images/eyePatch.gif'
 
 const About = () => {
     const targets = [
@@ -21,6 +24,12 @@ const About = () => {
             // markers: true
         })
     })
+
+    const jokesAppearing= () => {
+        gsap.to('#textBubbleContent', {delay: 4, opacity: 1})
+        gsap.to('#mustache', {delay: 2, opacity: 1})
+        gsap.to('#eyePatch', {delay: 3, opacity: 1})
+    }
 
     const textAppearing = () => {
         gsap.to('#aboutPage, #aboutRight', {opacity: 1})
@@ -42,7 +51,22 @@ const About = () => {
         let tl4 = gsap.timeline({repeat: -1})
         tl4.to('#chevronDown', {duration: .5, y: '5px', ease: 'none'})
         tl4.to('#chevronDown', {duration: .5, y: '0rem', ease: 'none'})
+
+        jokesAppearing()
     }
+
+    const fallingText = (e) => {
+        let tl = gsap.timeline({repeat: 0})
+        tl.to("#" + e.target.id, { rotate: '20deg'})
+        tl.to("#" + e.target.id, { delay: .2, rotate: '25deg'})
+        tl.to("#" + e.target.id, { delay: .2, rotate: '30deg'})
+        tl.to("#" + e.target.id, { delay: .2, rotate: '35deg'})
+        tl.to("#" + e.target.id, { delay: 1, y: '100rem', x: '10rem'})
+        tl.to("#" + e.target.id, { display: 'none'})
+        tl.to("#" + e.target.id, { delay: 2, rotate: '0deg', x: '0rem', y: '0rem'})
+        tl.to("#" + e.target.id, { display: 'block'})
+    }
+
 
   return (
     <div className="flex relative left-0 h-screen md:pl-[2rem] text-white">
@@ -56,7 +80,7 @@ const About = () => {
                     <h1 id="about_t" className="text-white hover:text-teal-600 opacity-0 ">t</h1>
 
                     <h1 id="about_M" className="text-white hover:text-teal-600 opacity-0 pl-2 lg:pl-5 " >M</h1>
-                    <h1 id="about_e" className="text-white hover:text-teal-600 opacity-0 " >e</h1>
+                    <h1 id="about_e" onMouseEnter={fallingText} className="text-white hover:text-teal-600 opacity-0 " >e</h1>
                 </div>
 
                 <div className="text-[1rem] w-[90vw] sm:w-[70vw] lg:w-[30rem]">
@@ -71,7 +95,26 @@ const About = () => {
                 </div>
             </div>
             <div id="aboutRight" className="opacity-0 flex justify-center items-center  lglet:opacity-0">
-                <img id="bodyShot" className="hidden border-2 border-white h-[40rem] xl:block xl:ml-[10rem] 2xl:ml-[20rem]" src={Matt} />
+                <div>
+                    <div id="textBubbleContent" className="hidden md:block opacity-0">
+                        {/* <div className="h-0">
+                            <h1 className="hidden md:block relative z-20 h-[20em] left-[27.8rem] top-[-2.5rem] text-black text-[1rem]" >Who put this</h1>
+                        </div>
+                        <div className="h-0">
+                            <h1 className="hidden md:block relative z-20 h-[20em] left-[28.5rem] top-[-1.0rem] text-black text-[1rem]" >in here?!? </h1>
+                        </div>
+                        <div className="h-0">
+                            <img id="textBubble" className="hidden md:block relative z-10 h-[10em] left-[25.5rem] top-[-5.5rem]" src={TextBubble} alt="mustache on my selfie" />
+                        </div> */}
+                    </div>
+                    <div className="h-0">
+                        <img id="mustache" className="hidden md:block opacity-0 relative h-[5rem] left-[21rem] top-[5.5rem] " src={Mustache} alt="mustache on my selfie" />
+                    </div>
+                    <div className="h-0">
+                        <img id="eyePatch" className="hidden md:block opacity-0 relative h-[3rem] left-[20.6rem] top-[4.8rem] scale-x-[-1]" src={EyePatch} alt="eye patch on my selfie" />
+                    </div>
+                    <img id="bodyShot" className="hidden border-2 border-white h-[40rem] xl:block xl:ml-[10rem] " src={Matt} />
+                </div>
             </div>
         </div>
     </div>

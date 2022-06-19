@@ -4,7 +4,25 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { setGlobal, addCallback } from 'reactn'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const rehydrateState = () => {
+  const state = localStorage.getItem("globalState")
+  if (state) return JSON.parse(state)
+
+  return {
+    silly: true,
+  }
+}
+
+setGlobal(rehydrateState())
+
+addCallback(state => {
+  localStorage.setItem("globalState", JSON.stringify(state))
+})
+
 root.render(
   <React.StrictMode>
     <App />

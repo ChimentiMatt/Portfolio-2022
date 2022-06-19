@@ -1957,10 +1957,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
-  "integrity" "sha512-duF1OTASSBQtcigUvhuiTB1Ya3OvSy+xORCiEf20H0P0lzx+/KeVsA99U5UjLXSbyo1DRJDlLKqTeM1ngosqtg=="
-  "resolved" "https://registry.npmjs.org/@types/react/-/react-18.0.12.tgz"
-  "version" "18.0.12"
+"@types/react@*", "@types/react@^16.8.0":
+  "integrity" "sha512-83zBE6+XUVXsdL3iFzOyUewdauaU+KviKCHEGOgSW52coAuqW7tEKQM0E9+ZC0Zk6TELQ2/JgogPvp7FavzFwg=="
+  "resolved" "https://registry.npmjs.org/@types/react/-/react-16.14.28.tgz"
+  "version" "16.14.28"
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -7310,7 +7310,7 @@
     "strip-ansi" "^6.0.1"
     "text-table" "^0.2.0"
 
-"react-dom@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^18.0.0", "react-dom@^18.1.0":
+"react-dom@*", "react-dom@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^18.0.0", "react-dom@^18.1.0":
   "integrity" "sha512-fU1Txz7Budmvamp7bshe4Zi32d0ll7ect+ccxNu9FlObT605GOEB8BfO4tmRJ39R5Zj831VCpvQ05QPBW5yb+w=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.1.0.tgz"
   "version" "18.1.0"
@@ -7411,12 +7411,19 @@
     "lodash.throttle" "^4.1.1"
     "prop-types" "^15.7.2"
 
-"react@*", "react@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.1.0", "react@>= 16":
+"react@*", "react@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.1.0", "react@>= 16":
   "integrity" "sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.1.0.tgz"
   "version" "18.1.0"
   dependencies:
     "loose-envify" "^1.1.0"
+
+"reactn@^2.2.7":
+  "integrity" "sha512-cqnt23kWN/ABqEZhW3OlpqI1DgTaaNDeHpSHtyd81qk0H1jd32zPTzJ69Hpzti2WakwNYveGFPIgI6i7E7nXOA=="
+  "resolved" "https://registry.npmjs.org/reactn/-/reactn-2.2.7.tgz"
+  "version" "2.2.7"
+  dependencies:
+    "use-force-update" "^1.0.5"
 
 "read-cache@^1.0.0":
   "integrity" "sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA=="
@@ -8587,6 +8594,11 @@
   "version" "4.4.1"
   dependencies:
     "punycode" "^2.1.0"
+
+"use-force-update@^1.0.5":
+  "integrity" "sha512-ua22fB++yaCvnf+Unht3L/2Lq3O7QstCtyh1IV8ydkJcyT6yVwMNgkKKhOsj5HRJCJj2oQbjzd6JJVnx7S+3uA=="
+  "resolved" "https://registry.npmjs.org/use-force-update/-/use-force-update-1.0.8.tgz"
+  "version" "1.0.8"
 
 "util-deprecate@^1.0.1", "util-deprecate@^1.0.2", "util-deprecate@~1.0.1":
   "integrity" "sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw=="

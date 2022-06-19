@@ -1,9 +1,13 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination  } from 'swiper';
+import gsap from "gsap"
 
+import MarioGif from '../images/MarioGif.gif'
 import MarioComposer from '../images/marioMusic.PNG'
 import Pokemon from '../images/pokemon.PNG'
 import LinguistAssist from '../images/LA.PNG'
+
+import DancingBros from '../images/dancingBros.gif'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -11,6 +15,21 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const ProjectSlides = () => {
+
+  const showGifOnHover = (nameOfImg) => {
+    if (nameOfImg == 'mario'){
+      gsap.to('#marioProjectImg', {duration: 0, display: 'none', opacity: 0 })
+      gsap.to('#marioProjectGif', {duration: 0, display: 'block', opacity: 1 })
+    }
+  }
+
+  const hideGifOnHover = (nameOfImg) => {
+    if (nameOfImg == 'mario'){
+      gsap.to('#marioProjectGif', {duration: 0, display: 'none', opacity: 0 })
+      gsap.to('#marioProjectImg', {duration: 0, display: 'block', opacity: 1 })
+    }
+  }
+
   return (
     <div id='projectsSection' className="opacity-0 w-[90vw] text-white mt-[1rem] ">
     <Swiper
@@ -32,7 +51,8 @@ const ProjectSlides = () => {
         >
         <SwiperSlide>
             <div className="w-[95%] ml-[1rem] md:ml-[2rem]  lg:ml-[12rem]">
-                <img src={MarioComposer}/>
+                <img id="marioProjectImg" className='hover:cursor-pointer' src={MarioComposer} onMouseEnter={() => showGifOnHover('mario')} alt="mario composer"/>
+                <img id="marioProjectGif" className='hidden opacity-0 hover:cursor-pointer' src={MarioGif} onMouseLeave={() => hideGifOnHover('mario')} alt="mario composer gif"/>
                 <p className="mt-[1rem] text-teal-600">{"<"} Mario Composer {"/>"}</p>
                 <p className="mt-[.5rem]">A MERN Stack application based on the Super Nintendo game Mario Paint Composer. Build a song by placing notes on the music sheet. Change the note from sounds like a piano or trumpet. Change the note type from durations like a quarter note or half note. Save your song with a user's system that is not required. </p>
                 <p className="mt-[.5rem]">Have fun! It's a joy to play around on. </p>

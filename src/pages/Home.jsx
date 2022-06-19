@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect } from 'react'
 import {Link} from 'react-scroll'
 import gsap from "gsap"
 import { GoChevronDown } from 'react-icons/go'
@@ -20,10 +20,10 @@ const Home = () => {
         textAppearing()
         let tl = gsap.timeline({repeat: -1})
 
-
         gsap.to('#happyCloud', {delay: 2, opacity: 1})
         tl.to('#happyCloud', {x: '5vw', duration: 10})
         tl.to('#happyCloud', {x: '0vw', duration: 10})
+    
     })
 
     const textAppearing = () => {
@@ -56,7 +56,7 @@ const Home = () => {
 
   return (
     <div id="homePage" className="flex flex-col md:pl-[2rem] justify-center h-screen md:h-[59rem] text-white">
-        <img id="happyCloud" className="absolute opacity-0 h-[10rem] top-0 right-[2rem] md:right-[10rem]" src={HappyClound} />
+        <img id="happyCloud" className="absolute opacity-0 h-[10rem] top-0 right-[2rem] md:right-[10rem]" src={HappyClound} alt="happy cloud gif"/>
         <div className="text-[4rem] font-bold pl-[1rem] leading-[110%] lg:pl-[10rem]  md2:text-[5rem] md:leading-[120%]">
             <div className="flex">
                 <h1 id="H" className="hover:text-teal-600 opacity-0" onMouseEnter={hoverAnimate}>H</h1>

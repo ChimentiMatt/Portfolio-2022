@@ -41,17 +41,17 @@ const Projects = ({ref}) => {
     <div id="topOfProjects" className="h-[100vh] flex flex-col justify-center">
         <div className="flex flex-col pl-[1rem] md:pl-[2rem] lg:pl-[12rem]">
             <div id='projectsPage'  className=" flex leading-[140%] text-[3.5rem]  md:text-[5rem] md:leading-[120%]">
-                <h1 id="projects_M" className="text-white hover:text-teal-600 opacity-0 ">M</h1>
-                <h1 id="projects_y" className="text-white hover:text-teal-600 opacity-0 ">y</h1>
+                <h1 id="projects_M" className="text-white hover:text-[#61DBFB] opacity-0 ">M</h1>
+                <h1 id="projects_y" className="text-white hover:text-[#61DBFB] opacity-0 ">y</h1>
 
-                <h1 id="projects_S" className="text-white hover:text-teal-600 opacity-0  pl-2 md:pl-5">S</h1>
-                <h1 id="projects_h" className="text-white hover:text-teal-600 opacity-0 ">h</h1>
-                <h1 id="projects_o" className="text-white hover:text-teal-600 opacity-0 ">o</h1>
-                <h1 id="projects_w" className="text-white hover:text-teal-600 opacity-0 ">w</h1>
-                <h1 id="projects_c" className="text-white hover:text-teal-600 opacity-0 ">c</h1>
-                <h1 id="projects_a" className="text-white hover:text-teal-600 opacity-0 ">a</h1>
-                <h1 id="projects_s" className="text-white hover:text-teal-600 opacity-0 ">s</h1>
-                <h1 id="projects_e" className="text-white hover:text-teal-600 opacity-0 ">e</h1>
+                <h1 id="projects_S" className="text-white hover:text-[#61DBFB] opacity-0  pl-2 md:pl-5">S</h1>
+                <h1 id="projects_h" className="text-white hover:text-[#61DBFB] opacity-0 ">h</h1>
+                <h1 id="projects_o" className="text-white hover:text-[#61DBFB] opacity-0 ">o</h1>
+                <h1 id="projects_w" className="text-white hover:text-[#61DBFB] opacity-0 ">w</h1>
+                <h1 id="projects_c" className="text-white hover:text-[#61DBFB] opacity-0 ">c</h1>
+                <h1 id="projects_a" className="text-white hover:text-[#61DBFB] opacity-0 ">a</h1>
+                <h1 id="projects_s" className="text-white hover:text-[#61DBFB] opacity-0 ">s</h1>
+                <h1 id="projects_e" className="text-white hover:text-[#61DBFB] opacity-0 ">e</h1>
             </div>
         </div>
         <ProjectSlides />

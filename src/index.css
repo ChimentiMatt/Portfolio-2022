@@ -11,8 +11,11 @@ body {
   font-family: 'Heebo', sans-serif;
   background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000,  #ffffff);
   /* overflow-x: hidden; */
-}
 
+}
+::-webkit-scrollbar {
+  display: none;
+}
 *{
   /* border: 1px solid red; */
   /* max-width: 1920px; */

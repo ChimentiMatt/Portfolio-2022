@@ -33,11 +33,11 @@ const ContactForm = ({toast}) => {
             //     }, function(error) {
             //         console.log('FAILED...', error);
             //     });
+            toast()
 
             document.querySelector('#celebrate').style.opacity = '1'
             document.querySelector('#duckDance').style.opacity = '1'
 
-            toast()
             document.getElementById('contactForm').style.opacity = .2
             document.getElementById('contactBtn').style.pointerEvents = 'none'
             document.getElementById('nameForm').style.pointerEvents = 'none'

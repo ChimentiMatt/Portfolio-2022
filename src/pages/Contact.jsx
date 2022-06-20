@@ -25,6 +25,7 @@ export const Contact = ({toast}) => {
             // markers: true
         })
     }, [])
+    
     const textAppearing = () => { 
         if (!wasEmailSent){ // stops scroll trigger from re activating form
             wasEmailSent = true
@@ -49,16 +50,16 @@ export const Contact = ({toast}) => {
         <div className="relative z-10 flex flex-col">
             <div className="flex flex-col pl-[1rem] lg:pl-[10rem]">
                 <div className="flex leading-[140%] text-[3.5rem] font-bold mt-[2.5rem] md:text-[5rem] md:leading-[120%]">
-                    <h1 id="contact_C" className="text-white hover:text-teal-600 opacity-0 ">C</h1>
-                    <h1 id="contact_o" className="text-white hover:text-teal-600 opacity-0 ">o</h1>
-                    <h1 id="contact_n" className="text-white hover:text-teal-600 opacity-0  ">n</h1>
-                    <h1 id="contact_t" className="text-white hover:text-teal-600 opacity-0 ">t</h1>
-                    <h1 id="contact_a" className="text-white hover:text-teal-600 opacity-0 ">a</h1>
-                    <h1 id="contact_c" className="text-white hover:text-teal-600 opacity-0 ">c</h1>
-                    <h1 id="contact_t_2" className="text-white hover:text-teal-600 opacity-0 ">t</h1>
+                    <h1 id="contact_C" className="text-white hover:text-[#61DBFB] opacity-0 ">C</h1>
+                    <h1 id="contact_o" className="text-white hover:text-[#61DBFB] opacity-0 ">o</h1>
+                    <h1 id="contact_n" className="text-white hover:text-[#61DBFB] opacity-0  ">n</h1>
+                    <h1 id="contact_t" className="text-white hover:text-[#61DBFB] opacity-0 ">t</h1>
+                    <h1 id="contact_a" className="text-white hover:text-[#61DBFB] opacity-0 ">a</h1>
+                    <h1 id="contact_c" className="text-white hover:text-[#61DBFB] opacity-0 ">c</h1>
+                    <h1 id="contact_t_2" className="text-white hover:text-[#61DBFB] opacity-0 ">t</h1>
 
-                    <h1 id="contact_M" className="text-white hover:text-teal-600 opacity-0  pl-2 md:pl-5">M</h1>
-                    <h1 id="contact_e" className="text-white hover:text-teal-600 opacity-0 ">e</h1>
+                    <h1 id="contact_M" className="text-white hover:text-[#61DBFB] opacity-0  pl-2 md:pl-5">M</h1>
+                    <h1 id="contact_e" className="text-white hover:text-[#61DBFB] opacity-0 ">e</h1>
 
                     <div className="h-0">
                         <img id="catTyping" className="hidden sm:block xl:hidden absolute h-[5rem] md:top-[6.4rem] md:ml-[11.5rem]" src={Typing} alt="cat typing" />
@@ -71,12 +72,13 @@ export const Contact = ({toast}) => {
             </div>
         </div>
         <div className="h-0">
-            <img id="catTypingDesktop" className="hidden relative top-[1rem] left-[0rem] h-[15rem]  xl:block 3xl:left-[20rem]" src={Typing} alt="cat typing" />
+            <img id="catTypingDesktop" className="hidden relative top-[1rem] left-[0rem] h-[15rem] z-10 xl:block 3xl:left-[20rem]" src={Typing} alt="cat typing" />
         </div>
 
-
         <img id="celebrate" className="absolute lg:left-[50%] z-0 opacity-0" src={Celebrate} alt="fireworks" />
-        <img id="duckDance" className="absolute lg:left-[60%] left-[7rem] h-[10rem] bottom-[5rem] md:bottom-[10rem] z-0 opacity-0" src={DuckDance} alt="dancing duck"/>
+        <img id="duckDance" className="absolute lg:left-[60%] left-[7rem] h-[10rem] bottom-[5rem] md:bottom-[10rem] z-10 opacity-0" src={DuckDance} alt="dancing duck"/>
     </div>
   )
 }
+
+export default Contact

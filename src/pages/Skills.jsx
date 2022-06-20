@@ -40,7 +40,7 @@ const Skills = () => {
     }
 
   return (
-    <div id="skillsTarget" className="flex h-screen items-center relative left-0 md:mt-[5rem] md:ml-[2rem] ">
+    <div id="skillsTarget" className="flex h-screen items-center relative left-0 min-h-[60rem] md:mt-[5rem] md:ml-[2rem] ">
         <div id="skillsPage" className="opacity-0 flex flex-col ">
             <div className="flex flex-col pl-[1rem] lg:pl-[10rem]">
                 <div className="flex leading-[140%] text-[3.5rem]  md:mt-[0rem] md:text-[5rem] xl:text-[5rem] xl:leading-[120%]">
@@ -97,13 +97,13 @@ const Skills = () => {
                     </div>
                     <div id="skillGifs" className="absolute h-0 xl:left-[55rem]">
                         <div className="h-0">
-                            <img src={PythonGif} alt="Python Gif" className="relative rotate-[10deg] h-[8rem] top-[25rem] left-[13rem] xl:top-[27rem] xl:left-[-35rem]"></img>
+                            <img src={PythonGif} alt="Python Gif" className="relative rotate-[10deg] h-[8rem] top-[25rem] left-[13rem] xl:top-[15rem] xl:left-[10rem]"></img>
                         </div>
                         <div className="h-0">
-                            <img src={ReactGif} alt="React Gif" className="relative rotate-[20deg] h-[8rem] top-[27rem] left-[0rem] xl:h-[10rem] xl:top-[13rem] xl:left-[8rem]"></img>
+                            <img src={ReactGif} alt="React Gif" className="relative rotate-[20deg] h-[8rem] top-[27rem] left-[0rem] xl:h-[10rem] xl:top-[27rem] xl:left-[-20rem]"></img>
                         </div>
                         <div className="h-0">
-                            <img src={JavaScriptGif} alt="Javascript Gif" className="relative rotate-[10deg] h-[8rem] top-[15rem] left-[11rem] xl:top-[-10rem] xl:left-[10rem]"></img>
+                            <img src={JavaScriptGif} alt="Javascript Gif" className="relative rotate-[10deg] h-[8rem] top-[15rem] left-[11rem] xl:top-[0rem] xl:left-[12rem]"></img>
                         </div>
 
                     </div>

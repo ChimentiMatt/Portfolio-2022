@@ -63,7 +63,7 @@ const About = () => {
 
  
   return (
-    <div id="aboutPage" className="opacity-0 flex items-center content-center align-center text-white md:pl-[2rem] lg2:h-screen ">
+    <div id="aboutPage" className="opacity-0 flex items-center content-center align-center text-white min-h-[85rem] md:pl-[2rem] sm:min-h-[90rem]  lg2:min-h-[50rem]  ">
         <div  className=" flex flex-col lg2:flex-row ">
             <div className="flex flex-col justify-center pl-[1rem] lg:pl-[10rem] ">
                 <div className="flex leading-[140%] text-[3.5rem] font-bold md:text-[5rem] lg2:leading-[120%]">

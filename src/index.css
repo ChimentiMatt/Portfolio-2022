@@ -16,6 +16,7 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
 *{
   /* border: 1px solid red; */
   /* max-width: 1920px; */
@@ -78,11 +79,15 @@ button:focus {
   position: relative;
   left: .5rem;
   bottom: 9rem;
+  font-weight: bold;
+  text-shadow: 0px 5px #000000;
 }
 .swiper-button-next:after{
   color: white;
   position: relative;
   bottom: 9rem;
+  font-weight: bold;
+  text-shadow: 0px 5px #000000;
 }
 
 

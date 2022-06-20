@@ -55,37 +55,37 @@ const Skills = () => {
                     <h1 id="skills_s" className="opacity-0 text-white hover:text-[#61DBFB] ">s</h1>
                 </div>
 
-                <div className="text-white mt-2 xl:mt-5 xl:text-[2rem]">
+                <div className="text-white mt-2 md:text-[1.5rem] xl:mt-5 xl:text-[2rem]">
                     <div className="flex xl:flex-row  ">
-                        <div className="w-[9rem] xl:w-[20rem]">
-                            <h1 className="text-[#61DBFB] smallShadow">{"<"} Stacks {"/>"} </h1>
+                        <div className="w-[9rem] md:w-[15rem] xl:w-[20rem]">
+                            <h1 className="text-[#61DBFB] ">{"<"} Stacks {"/>"} </h1>
                             <ul>MERN Stack</ul>
                             <ul>Django Vue.js</ul>
                             <br></br>
 
-                            <h1 className="text-[#61DBFB] smallShadow">{"<"} Languages {"/>"} </h1>
+                            <h1 className="text-[#61DBFB] ">{"<"} Languages {"/>"} </h1>
                             <ul>JavaScript</ul>
                             <ul>Python</ul>
                             <ul>Java</ul>
                             <br></br>
                         </div>
-                        <div className="ml-10 xl:ml-0 xl:w-[20rem]">
-                            <h1 className="text-[#61DBFB] smallShadow">{"<"} Databases {"/>"} </h1>
+                        <div className="ml-10 md:w-[15rem]  xl:ml-0 xl:w-[20rem]">
+                            <h1 className="text-[#61DBFB] ">{"<"} Databases {"/>"} </h1>
                             <ul>MongoDB</ul>
                             <ul>SQL</ul>
                             <br></br>
 
 
-                            <h1 className="text-[#61DBFB] smallShadow">{"<"} Web Design {"/>"} </h1>
+                            <h1 className="md:w-[15rem]  text-[#61DBFB] ">{"<"} Web Design {"/>"} </h1>
                             <ul>HTML</ul>
                             <ul>CSS</ul>
                             <ul>Responsive Design</ul>
                             <br></br>
                         </div>   
 
-                    {/* Hidden on Mobile */}
+                    {/* Mobile Version*/}
                     <div className="hidden xl:block w-[20rem]">
-                        <h1 className="text-[#61DBFB] smallShadow">{"<"} Frameworks {"/>"} </h1>
+                        <h1 className="text-[#61DBFB] ">{"<"} Frameworks {"/>"} </h1>
                         <ul>React</ul>
                         <ul>Node.js</ul>
                         <ul>Express</ul>
@@ -97,22 +97,22 @@ const Skills = () => {
                     </div>
                     <div id="skillGifs" className="absolute h-0 xl:left-[55rem]">
                         <div className="h-0">
-                            <img src={PythonGif} alt="Python Gif" className="relative rotate-[10deg] h-[8rem] top-[25rem] left-[13rem] xl:top-[15rem] xl:left-[10rem]"></img>
+                            <img src={PythonGif} alt="Python Gif" className="relative rotate-[10deg] h-[8rem] top-[25rem] left-[13rem] md:top-[25rem] md:left-[18rem] xl:top-[15rem] xl:left-[10rem]"></img>
                         </div>
                         <div className="h-0">
-                            <img src={ReactGif} alt="React Gif" className="relative rotate-[20deg] h-[8rem] top-[27rem] left-[0rem] xl:h-[10rem] xl:top-[27rem] xl:left-[-20rem]"></img>
+                            <img src={ReactGif} alt="React Gif" className="relative rotate-[20deg] h-[8rem] top-[27rem] left-[0rem] md:top-[2rem] md:left-[30rem] xl:h-[10rem] xl:top-[27rem] xl:left-[-35rem]"></img>
                         </div>
                         <div className="h-0">
-                            <img src={JavaScriptGif} alt="Javascript Gif" className="relative rotate-[10deg] h-[8rem] top-[15rem] left-[11rem] xl:top-[0rem] xl:left-[12rem]"></img>
+                            <img src={JavaScriptGif} alt="Javascript Gif" className="relative rotate-[10deg] h-[8rem] top-[15rem] left-[11rem] md:top-[13rem] md:left-[32rem]  xl:top-[0rem] xl:left-[12rem]"></img>
                         </div>
 
                     </div>
                     
                 </div>
           
-                {/* NOT hidden on mobile */}
+                {/* Desktop version */}
                 <div className="text-white flex">
-                    <div className="w-[9rem]  xl:hidden">
+                    <div className="w-[9rem] md:w-[15rem]  xl:hidden">
                         <h1 className="text-[#61DBFB] smallShadow">{"<"} Frameworks {"/>"} </h1>
                         <ul>React</ul>
                         <ul>Node.js</ul>

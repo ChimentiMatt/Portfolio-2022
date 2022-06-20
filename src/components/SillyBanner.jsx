@@ -19,8 +19,8 @@ const SillyBanner = () => {
           gsap.to('#catTyping', {opacity: 1})
           gsap.to('#catTypingDesktop', {opacity: 1})
           gsap.to('#catTypingMobile', {opacity: 1})
-          gsap.to('#runningCat', {opacity: 1})
-
+          gsap.to('#rocketMobile', {opacity: 1})
+          gsap.to('#rocketDesktop', {opacity: 1})
         }
     
         else{
@@ -32,7 +32,8 @@ const SillyBanner = () => {
           gsap.to('#catTyping', {opacity: 0})
           gsap.to('#catTypingDesktop', {opacity: 0})
           gsap.to('#catTypingMobile', {opacity: 0})
-          gsap.to('#runningCat', {opacity: 0})
+          gsap.to('#rocketMobile', {opacity: 0})
+          gsap.to('#rocketDesktop', {opacity: 0})
         }
     }
     return (

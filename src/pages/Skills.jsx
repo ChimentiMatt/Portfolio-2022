@@ -40,7 +40,7 @@ const Skills = () => {
     }
 
   return (
-    <div id="skillsTarget" className="flex h-screen items-center relative left-0 min-h-[60rem] md:mt-[5rem] md:ml-[2rem] ">
+    <div id="skillsTarget" className="flex h-[60rem] items-center relative left-0 min-h-[60rem] md:mt-[5rem] md:ml-[2rem] ">
         <div id="skillsPage" className="opacity-0 flex flex-col ">
             <div className="flex flex-col pl-[1rem] lg:pl-[10rem]">
                 <div className="flex leading-[140%] text-[3.5rem]  md:mt-[0rem] md:text-[5rem] xl:text-[5rem] xl:leading-[120%]">

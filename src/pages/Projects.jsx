@@ -38,7 +38,7 @@ const Projects = ({ref}) => {
     }
     
   return (
-    <div id="topOfProjects" className="h-[100vh] flex flex-col justify-center">
+    <div id="topOfProjects" className="h-[60rem] flex flex-col justify-center ">
         <div className="flex flex-col pl-[1rem] md:pl-[2rem] lg:pl-[12rem]">
             <div id='projectsPage'  className=" flex leading-[140%] text-[3.5rem]  md:text-[5rem] md:leading-[120%]">
                 <h1 id="projects_M" className="text-white hover:text-[#61DBFB] opacity-0 ">M</h1>

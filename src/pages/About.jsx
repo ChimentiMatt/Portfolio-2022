@@ -3,12 +3,10 @@ import gsap from "gsap"
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 
 import Matt from '../images/bodyShot.jpeg'
-// import TextBubble from '../images/textBubbleStatic.png'
 import Mustache from '../images/mustache.gif'
 import EyePatch from '../images/eyePatch.gif'
 
 const About = () => {
-    const [silly, setSilly] = useGlobal("silly")
     const targets = [
         'about_A', 'about_b', 'about_o', 'about_u', 'about_t', 
         'about_M', 'about_e'
@@ -88,19 +86,8 @@ const About = () => {
                     <p >I teach Intro To Programming for PDX Code Guild, which is a community I love. I am a graduate myself of their Full-Stack Bootcamp as well as their Advanced MERN Stack Bootcamp. I also manage the TAs for the company and run Study Hall. It's a true gem of an organization and community.</p>
                 </div>
             </div>
-            <div id="aboutRight" className="opacity-0 flex justify-center items-center mt-[2rem] ml-[1rem] lg2:mt-[0rem]">
+            <div id="aboutRight" className="opacity-0 flex justify-center items-center mt-[2rem] ml-[1rem] lg2:mt-[0rem] lg2:ml-[3rem]">
                 <div>
-                    {/* <div id="textBubbleContent" className="hidden md:block opacity-0">
-                        <div className="h-0">
-                            <h1 className="hidden md:block relative z-20 h-[20em] left-[27.8rem] top-[-2.5rem] text-black text-[1rem]" >Who put this</h1>
-                        </div>
-                        <div className="h-0">
-                            <h1 className="hidden md:block relative z-20 h-[20em] left-[28.5rem] top-[-1.0rem] text-black text-[1rem]" >in here?!? </h1>
-                        </div>
-                        <div className="h-0">
-                            <img id="textBubble" className="hidden md:block relative z-10 h-[10em] left-[25.5rem] top-[-5.5rem]" src={TextBubble} alt="mustache on my selfie" />
-                        </div>
-                    </div> */}
                     <div className="h-0">
                         <img id="mustache" className=" relative  h-[3rem] left-[8.7rem] top-[4.5rem] md:h-[5rem] md:left-[11rem] md:top-[5.5rem]  xl:ml-[10rem]" src={Mustache} alt="mustache on my selfie" />
                     </div>

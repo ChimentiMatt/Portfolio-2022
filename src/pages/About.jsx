@@ -89,12 +89,12 @@ const About = () => {
             <div id="aboutRight" className="opacity-0 flex justify-center items-center mt-[2rem] ml-[1rem] lg2:mt-[0rem] lg2:ml-[3rem]">
                 <div>
                     <div className="h-0">
-                        <img id="mustache" className=" relative  h-[3rem] left-[8.7rem] top-[4.5rem] md:h-[5rem] md:left-[11rem] md:top-[5.5rem]  xl:ml-[10rem]" src={Mustache} alt="mustache on my selfie" />
+                        <img id="mustache" className=" relative  h-[2.9rem] left-[7.1rem] top-[3.5rem] md:h-[5rem] md:left-[11rem] md:top-[5.5rem]  xl:ml-[10rem]" src={Mustache} alt="mustache on my selfie" />
                     </div>
                     <div className="h-0">
-                        <img id="eyePatch" className=" relative h-[2rem] left-[8.2rem] top-[3.7rem] scale-x-[-1] md:h-[3rem] md:left-[10.6rem] md:top-[4.8rem]  xl:ml-[10rem]" src={EyePatch} alt="eye patch on my selfie" />
+                        <img id="eyePatch" className=" relative h-[1.7rem] left-[7rem] top-[3.1rem] scale-x-[-1] md:h-[3rem] md:left-[10.6rem] md:top-[4.8rem]  xl:ml-[10rem]" src={EyePatch} alt="eye patch on my selfie" />
                     </div>
-                    <img id="bodyShot" className=" border-2 border-white h-[30rem] mb-[3rem] md:mb-0 md:h-[40rem] xl:block xl:ml-[10rem] " src={Matt} alt="selfie"/>
+                    <img id="bodyShot" className=" border-2 border-white h-[25rem] mb-[3rem] md:mb-0 md:h-[40rem] xl:block xl:ml-[10rem] " src={Matt} alt="selfie"/>
                 </div>
             </div>
         </div>

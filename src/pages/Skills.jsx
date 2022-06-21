@@ -43,7 +43,7 @@ const Skills = () => {
     <div id="skillsTarget" className="flex h-[60rem] items-center relative left-0 min-h-[60rem] md:mt-[5rem] md:ml-[2rem] ">
         <div id="skillsPage" className="opacity-0 flex flex-col ">
             <div className="flex flex-col pl-[1rem] lg:pl-[10rem]">
-                <div className="flex leading-[140%] text-[3.5rem]  md:mt-[0rem] md:text-[5rem] xl:text-[5rem] xl:leading-[120%]">
+                <div className="flex leading-[140%] text-[3.3rem]  md:mt-[0rem] md:text-[5rem] xl:text-[5rem] xl:leading-[120%]">
                     <h1 id="skills_M" className="opacity-0 text-white hover:text-[#61DBFB] ">M</h1>
                     <h1 id="skills_y" className="opacity-0 text-white hover:text-[#61DBFB] ">y</h1>
 

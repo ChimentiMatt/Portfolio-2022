@@ -64,7 +64,7 @@ const About = () => {
     <div id="aboutPage" className="opacity-0 flex items-center content-center align-center text-white min-h-[85rem] md:pl-[2rem] sm:min-h-[90rem]  lg2:min-h-[50rem]  ">
         <div  className=" flex flex-col lg2:flex-row ">
             <div className="flex flex-col justify-center pl-[1rem] lg:pl-[10rem] ">
-                <div className="flex leading-[140%] text-[3.5rem] font-bold md:text-[5rem] lg2:leading-[120%]">
+                <div className="flex leading-[140%] text-[3.3rem] font-bold md:text-[5rem] lg2:leading-[120%]">
                     <h1 id="about_A" className="text-white hover:text-[#61DBFB] opacity-0 ">A</h1>
                     <h1 id="about_b" className="text-white hover:text-[#61DBFB] opacity-0 ">b</h1>
                     <h1 id="about_o" className="text-white hover:text-[#61DBFB] opacity-0 ">o</h1>

@@ -49,7 +49,7 @@ export const Contact = ({toast}) => {
     <div id="contactPage" className="text-white items-center flex h-[100vh] relative left-0  md:mt-0 md:ml-[2rem]">
         <div className="relative z-10 flex flex-col">
             <div className="flex flex-col pl-[1rem] lg:pl-[10rem]">
-                <div className="flex leading-[140%] text-[3.5rem] font-bold mt-[2.5rem] md:text-[5rem] md:leading-[120%]">
+                <div className="flex leading-[140%] text-[3.3rem] font-bold mt-[2.5rem] md:text-[5rem] md:leading-[120%]">
                     <h1 id="contact_C" className="text-white hover:text-[#61DBFB] opacity-0 ">C</h1>
                     <h1 id="contact_o" className="text-white hover:text-[#61DBFB] opacity-0 ">o</h1>
                     <h1 id="contact_n" className="text-white hover:text-[#61DBFB] opacity-0  ">n</h1>

@@ -14,7 +14,7 @@ const Projects = ({ref}) => {
         gsap.registerPlugin(ScrollTrigger);
         
         ScrollTrigger.create({
-            trigger: "#projects_M",
+            trigger: "#projects_S",
             onEnter: textAppearing,
             start: "center 700",
             end: "center 700 ",

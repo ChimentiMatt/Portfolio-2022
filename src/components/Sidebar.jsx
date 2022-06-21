@@ -21,37 +21,15 @@ const Sidebar = ({handleClick}) => {
         border-white
     
         lg:flex">
-        <div className='bg-black border-b-[2px] border-white text-white text-center hover:bg-white hover:cursor-pointer hover:text-black'>
-            <Link to="homePage" spy={true} smooth={true}>
-                <h1 className="
-                    text-[2rem]
-                    pt-[1.5rem]
-                    ">Matt
-                </h1>
-                <p className="
-                    relative
-                    bottom-2.5
-                    text-center
-                    text-[.7rem]
-                    "
-                >{"<"} Developer  {"/>"}
-                </p>
-                <p className="
-                    relative
-                    bottom-3
-                    text-center
-                    text-[.7rem]
-                    "
-                >{"<"} Student {"/>"}
-                </p>
-                <p className="
-                    relative
-                    bottom-3.5
-                    text-[.7rem]
-                    pb-[1.5rem]"
-                >{"<"} Teacher {"/>"}
-                </p>
-            </Link>
+        <div className='bg-white border-b-[2px] border-white text-black text-center hover:bg-black hover:cursor-pointer hover:text-white'>
+            <div className='leading-7 text-[1.5rem] pb-[1.5rem] pt-[1.5rem] '>
+                <Link to="homePage" spy={true} smooth={true}>
+                    <p className="">{"<"} Matter</p>
+                    <p>of</p>
+                    <p>Code {"/>"}</p>
+
+                </Link>
+            </div>
         </div>
         
         <div className=''>

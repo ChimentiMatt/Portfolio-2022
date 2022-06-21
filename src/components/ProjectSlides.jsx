@@ -71,7 +71,7 @@ const ProjectSlides = () => {
                   <img id="marioProjectGif" className='hidden opacity-0 hover:cursor-pointer' src={MarioGif} onMouseLeave={() => hideGifOnHover('mario')} alt="mario composer gif"/>
                   <p className="mt-[.5rem] text-[#61DBFB] pl-[.5rem]">{"<"} Mario Composer {"/>"}</p>
                   <p className="mt-[.5rem] pl-[.5rem] pr-[.5rem]">A MERN Stack application based on the Super Nintendo game Mario Paint Composer. Build a song by placing notes on the music sheet. Change the note from sounds like a piano or trumpet. Change the note type from durations like a quarter note or half note. Save your song with a user's system that is not required. Have fun! It's a joy to play around on.</p>
-                  <p className="mt-[.5rem] pl-[.5rem]  hover:cursor-pointer">Visit Application </p>
+                  {/* <p className="mt-[.5rem] pl-[.5rem]  hover:cursor-pointer">Visit Application </p> */}
               </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -80,7 +80,7 @@ const ProjectSlides = () => {
                   <p className="mt-[.5rem] pl-[.5rem] text-[#61DBFB]">{"<"} Pokémon! Simulator {"/>"}</p>
                   <p className="mt-[.5rem] pl-[.5rem] pr-[.5rem]">Play a mock version of the Pokemon Gameboy game built using only vanilla Javascript. Use Charmander to battle and catch Pokémon. See if you can catch them all. Your progress is tracked in your Pokédex. How to play: Use the Arrow Keys and Enter or click on the gameboy itself. Hit Start to view your progress and see what Pokemon you have caught.</p>
 
-                  <p className="mt-[.5rem] pl-[.5rem] hover:cursor-pointer">Visit Application </p>
+                  {/* <p className="mt-[.5rem] pl-[.5rem] hover:cursor-pointer">Visit Application </p> */}
               </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -88,7 +88,7 @@ const ProjectSlides = () => {
                   <img src={LinguistAssist}/>
                   <p className="mt-[.5rem]  pl-[.5rem]  mb-2 text-[#61DBFB]">{"<"} Linguist Assist {"/>"}</p>
                   <p className="mt-[.5rem] pl-[.5rem] pr-[.5rem">Built with Django and Vue.js, this application is designed to help students,  and second language learners to help improve spelling. Quiz yourself; hear words and definitions and typo it out to see if you spelled the word correct. Your missed words will be instantly stored, so you can learn from your mistakes.</p>
-                  <p className="mt-[.5rem] pl-[.5rem]  hover:cursor-pointer">Visit Application </p>
+                  {/* <p className="mt-[.5rem] pl-[.5rem]  hover:cursor-pointer">Visit Application </p> */}
               </div>
           </SwiperSlide>
       </Swiper>

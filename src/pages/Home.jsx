@@ -60,7 +60,7 @@ const Home = () => {
   return (
     <div id="homePage" className="flex flex-col md:pl-[2rem] justify-center h-screen md:h-[59rem] text-white">
         <img id="happyCloud" className="absolute h-[10rem] top-0 right-[2rem] md:right-[10rem]" src={HappyClound} alt="happy cloud gif"/>
-        <div className="text-[4rem] font-bold pl-[1rem] leading-[110%] lg:pl-[10rem]  md2:text-[5rem] md:leading-[120%]">
+        <div className="text-[3.5rem] font-bold pl-[1rem] leading-[110%] lg:pl-[10rem]  md2:text-[5rem] md:leading-[120%]">
             <div className="flex">
                 <h1 id="H" className="hover:text-[#61DBFB] opacity-0" onMouseEnter={hoverAnimate}>H</h1>
                 <h1 id="e" className="hover:text-[#61DBFB] opacity-0" onMouseEnter={hoverAnimate}>e</h1>

@@ -61,7 +61,7 @@ const ContactForm = ({toast}) => {
             <input id="subjectForm" onClick={accentField} name="subject" className="bg-white p-2 mb-2 border-2 border-white md:p-4" placeholder="Subject"></input>
             <textarea id="messageForm" onClick={accentField} name="message" className="bg-white p-2 h-full border-2 border-white  md:p-4" placeholder="Message"></textarea>
             <div className="h-0">
-                <img id="catTypingMobile" className="sm:hidden relative h-[5rem] top-[-5rem] right-[-13rem]" src={Typing} alt="cat typing" />
+                <img id="catTypingMobile" className="sm:hidden relative h-[5rem] top-[-5rem] right-[-10rem]" src={Typing} alt="cat typing" />
             </div>
         <div className="flex justify-end">
             <button id="contactBtn" className="contactBtn p-3 pl-12 pr-12 mt-[2rem] border-2 border-white  hover:bg-black hover:text-white ">Send Message</button>

@@ -97,13 +97,13 @@ const Skills = () => {
                     </div>
                     <div id="skillGifs" className="absolute h-0 xl:left-[55rem]">
                         <div className="h-0">
-                            <img src={PythonGif} alt="Python Gif" className="relative rotate-[10deg] h-[8rem] top-[25rem] left-[13rem] md:top-[25rem] md:left-[18rem] xl:top-[15rem] xl:left-[10rem]"></img>
+                            <img src={PythonGif} alt="Python Gif" className="relative rotate-[10deg] h-[5rem] top-[25rem] left-[13rem] md:h-[8rem] md:top-[25rem] md:left-[18rem] xl:top-[15rem] xl:left-[10rem]"></img>
                         </div>
                         <div className="h-0">
-                            <img src={ReactGif} alt="React Gif" className="relative rotate-[20deg] h-[8rem] top-[27rem] left-[0rem] md:top-[2rem] md:left-[30rem] xl:h-[10rem] xl:top-[27rem] xl:left-[-35rem]"></img>
+                            <img src={ReactGif} alt="React Gif" className="relative rotate-[20deg] h-[5rem] top-[27rem] left-[0rem] md:h-[8rem] md:top-[2rem] md:left-[30rem] xl:h-[10rem] xl:top-[27rem] xl:left-[-35rem]"></img>
                         </div>
                         <div className="h-0">
-                            <img src={JavaScriptGif} alt="Javascript Gif" className="relative rotate-[10deg] h-[8rem] top-[15rem] left-[11rem] md:top-[13rem] md:left-[32rem]  xl:top-[0rem] xl:left-[12rem]"></img>
+                            <img src={JavaScriptGif} alt="Javascript Gif" className="relative rotate-[10deg] h-[5rem] top-[15rem] left-[11rem] md:h-[8rem] md:top-[13rem] md:left-[32rem]  xl:top-[0rem] xl:left-[12rem]"></img>
                         </div>
 
                     </div>

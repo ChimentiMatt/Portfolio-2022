@@ -34,18 +34,18 @@ const Home = () => {
         for (const element of targets){
             
             let tl = gsap.timeline({repeat: 0})
-            tl.to("#" + element, { delay: time, opacity: 1, ease: 'none', transition: .2})
-            tl.to("#" + element, { delay: time, opacity: 1, ease: 'none'})
+            tl.to("#" + element, { delay: time, opacity: 1, ease: 'none', transition: .2, zIndex: 10})
+            tl.to("#" + element, { delay: time, opacity: 1, ease: 'none', zIndex: 10})
             
             let tl2 = gsap.timeline({repeat: 0})
-            tl2.to("#" + element, { delay: time, scale: 1.2, ease: 'none', transition: .2})
-            tl2.to("#" + element, { scale: 1, ease: 'none'})
+            tl2.to("#" + element, { delay: time, scale: 1.2, ease: 'none', transition: .2, zIndex: 10})
+            tl2.to("#" + element, { scale: 1, ease: 'none', zIndex: 10})
             
             time += .03
         }
 
         gsap.to('#contactMeBtn', {delay: 1.5, opacity: 1, top: 0})
-        gsap.to('#chevronDown', {delay: 3, opacity: 1})
+        gsap.to('#chevronDown', {delay: 3, opacity: 1, zIndex: 0})
         let tl4 = gsap.timeline({repeat: -1})
         tl4.to('#chevronDown', {duration: .5, y: '5px'})
         tl4.to('#chevronDown', {duration: .5, y: '0rem'})
@@ -70,7 +70,7 @@ const Home = () => {
                 <h1 id="comma" className="hover:text-[#61DBFB] opacity-0" onMouseEnter={hoverAnimate}>,</h1>
             </div>
 
-            <div className="flex">
+            <div className="flex relative z-50">
                 <h1 id="I" className="hover:text-[#61DBFB] opacity-0" onMouseEnter={hoverAnimate}>I</h1>
                 <h1 id="apostrophe" className="hover:text-[#61DBFB] opacity-0" onMouseEnter={hoverAnimate}>'</h1>
                 <h1 id="m" className="hover:text-[#61DBFB] opacity-0" onMouseEnter={hoverAnimate}>m</h1>
@@ -166,7 +166,7 @@ const Home = () => {
                 <button id="contactMeBtn" className="opacity-0 contactBtn text-black p-[.5rem] pl-[2rem] pr-[2rem] ml-[1rem] mt-[1rem] border-2 border-white bg-white hover:bg-black hover:text-white lg:ml-[10rem] md:mt-[2.5rem]">Send Message</button>
             </Link>
         </div>
-        <div id='chevronDown' className="absolute  opacity-0 text-black bottom-[0rem] right-[0rem] md:block">
+        <div id='chevronDown' className="absolute z-0 opacity-0 text-black bottom-[0rem] right-[0rem] md:block">
             <p className='relative left-[.3rem] bottom-[1rem] rotate-[-90deg]'>Scroll Down</p>
             <GoChevronDown className="relative h-[4.5rem] w-[4rem] text-black right-[-1rem]"/>
         </div>

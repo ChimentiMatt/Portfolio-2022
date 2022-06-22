@@ -21,7 +21,7 @@ const Sidebar = ({handleClick}) => {
         border-white
     
         lg:flex">
-        <div className='bg-white border-b-[2px] border-white text-black text-center hover:bg-black hover:cursor-pointer hover:text-white'>
+        <div className='bg-black border-b-[2px] border-white text-white text-center hover:bg-white hover:cursor-pointer hover:text-black'>
             <div className='leading-7 text-[1.5rem] pb-[1.5rem] pt-[1.5rem] '>
                 <Link to="homePage" spy={true} smooth={true}>
                     <p className="">{"<"} Matter</p>

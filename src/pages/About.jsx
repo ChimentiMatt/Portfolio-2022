@@ -72,12 +72,12 @@ const About = () => {
                     <h1 id="about_t" className="text-white hover:text-[#61DBFB] opacity-0 ">t</h1>
 
                     <h1 id="about_M" className="text-white hover:text-[#61DBFB] opacity-0 pl-2 lg2:pl-5 " >M</h1>
-                    <h1 id="about_e" onMouseEnter={fallingText} className="text-white hover:text-[#61DBFB] opacity-0 " >e</h1>
+                    <h1 id="about_e" className="text-white hover:text-[#61DBFB] opacity-0 " >e</h1>
                 </div>
 
                 <div className="text-[1rem] w-[90vw] sm:w-[70vw] lg2:w-[30rem]">
                     <p className="text-[#61DBFB]">{"<"} Developer {"/>"}</p>
-                    <p>I am a developer living in Oregon who has a passion for making creative front-end focused applications. I find pushing myself to create something bigger and better to be a never-ending supply of excitement and motivation as I freelance, and work on passion projects. </p>
+                    <p>I am a developer living in Oregon who has a passion for making creative frontend focused applications. I find pushing myself to create something bigger and better to be a never-ending supply of excitement and motivation as I freelance, and work on passion projects. </p>
 
                     <p className="text-[#61DBFB] mt-5">{"<"} Student {"/>"}</p>
                     <p className="mb-5">Currently, I am two months away from finishing my Bridge to Master of Software at GCU then I begin the formal Masters. My GPA is a 4.0, and I will keep perfect marks throughout  my acedemia. </p>
